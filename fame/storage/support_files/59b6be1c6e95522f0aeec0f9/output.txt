@@ -1,0 +1,54 @@
+11 Sep 18:47:25 - mailware-jail, a malware sandbox ver. 0.15
+11 Sep 18:47:25 - ------------------------
+11 Sep 18:47:25 - Arguments: /home/maik/gitHub/TFM/fame/storage/212f7656393919cb98c6134b3281726862bc8df2144f7c028529ada1f3d3aa30/modified-67d8e2527adf123cb5aa49b5ed9aea0ab356e113779499fa44b65187efdb3ca7.js
+11 Sep 18:47:25 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+11 Sep 18:47:25 - Malware files: /home/maik/gitHub/TFM/fame/storage/212f7656393919cb98c6134b3281726862bc8df2144f7c028529ada1f3d3aa30/modified-67d8e2527adf123cb5aa49b5ed9aea0ab356e113779499fa44b65187efdb3ca7.js
+11 Sep 18:47:25 - Execution timeout set to: 60 seconds
+11 Sep 18:47:25 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+11 Sep 18:47:25 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+11 Sep 18:47:25 - Download from remote server: No
+11 Sep 18:47:26 - ==> Preparing Sandbox environment.
+11 Sep 18:47:26 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+11 Sep 18:47:26 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+11 Sep 18:47:26 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+11 Sep 18:47:26 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+11 Sep 18:47:26 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+11 Sep 18:47:26 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+11 Sep 18:47:26 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+11 Sep 18:47:26 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+11 Sep 18:47:26 - ==> Executing malware file(s). =========================================
+11 Sep 18:47:26 -  => Executing: /home/maik/gitHub/TFM/fame/storage/212f7656393919cb98c6134b3281726862bc8df2144f7c028529ada1f3d3aa30/modified-67d8e2527adf123cb5aa49b5ed9aea0ab356e113779499fa44b65187efdb3ca7.js verbosely, reporting silent catches
+11 Sep 18:47:26 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_212f7656393919cb98c6134b3281726862bc8df2144f7c028529ada1f3d3aa30_modified-67d8e2527adf123cb5aa49b5ed9aea0ab356e113779499fa44b65187efdb3ca7.js
+11 Sep 18:47:26 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_212f7656393919cb98c6134b3281726862bc8df2144f7c028529ada1f3d3aa30_modified-67d8e2527adf123cb5aa49b5ed9aea0ab356e113779499fa44b65187efdb3ca7.js
+11 Sep 18:47:26 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/212f7656393919cb98c6134b3281726862bc8df2144f7c028529ada1f3d3aa30/modified-67d8e2527adf123cb5aa49b5ed9aea0ab356e113779499fa44b65187efdb3ca7.js'
+11 Sep 18:47:26 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/212f7656393919cb98c6134b3281726862bc8df2144f7c028529ada1f3d3aa30/modified-67d8e2527adf123cb5aa49b5ed9aea0ab356e113779499fa44b65187efdb3ca7.js,xyz'
+11 Sep 18:47:26 - WScript.CreateObject(WScript.Shell)
+11 Sep 18:47:26 - new WScript.Shell[14]
+11 Sep 18:47:26 - WScript.CreateObject(Scripting.FileSystemObject)
+11 Sep 18:47:26 - new Scripting.FileSystemObject[15]
+11 Sep 18:47:26 - new DriveObject[16](C:)
+11 Sep 18:47:26 - DriveObject[16](C:).name = (string) 'C:'
+11 Sep 18:47:26 - new Collection[17]
+11 Sep 18:47:26 - WScript.Sleep(1000)
+11 Sep 18:47:27 - ActiveXObject(ScriptControl)
+11 Sep 18:47:27 - new MSScriptControl.ScriptControl[18]
+11 Sep 18:47:27 - MSScriptControl.ScriptControl[18].Language = (string) 'VBScript'
+11 Sep 18:47:27 - MSScriptControl.ScriptControl[18].AddObject(WScript, Windows Script Host)
+11 Sep 18:47:27 - MSScriptControl.ScriptControl[18].Timeout = (number) '-1'
+11 Sep 18:47:27 - GetObject(winmgmts:{impersonationLevel=impersonate}, undefined)
+11 Sep 18:47:27 - new AutomationObject[19](winmgmts:{impersonationLevel=impersonate}, undefined)
+11 Sep 18:47:27 - >>> FIXME: AutomationObject[19](winmgmts:{impersonationLevel=impersonate}, undefined)[InstancesOf] not defined
+11 Sep 18:47:27 - Exception occured: object TypeError: wmi.InstancesOf is not a function
+    at /home/maik/gitHub/TFM/fame/storage/212f7656393919cb98c6134b3281726862bc8df2144f7c028529ada1f3d3aa30/modified-67d8e2527adf123cb5aa49b5ed9aea0ab356e113779499fa44b65187efdb3ca7.js:20:22
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at Object.runInContext (vm.js:89:6)
+    at run_in_ctx (/home/maik/gitHub/TFM/fame/fame/modules/community/processing/malware_jail/malware-jail/jailme.js:322:16)
+    at Object.<anonymous> (/home/maik/gitHub/TFM/fame/fame/modules/community/processing/malware_jail/malware-jail/jailme.js:357:20)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+    at Function.Module._load (module.js:438:3)
+11 Sep 18:47:27 - ==> Cleaning up sandbox.
+11 Sep 18:47:27 - ==> Script execution finished, dumping sandbox environment to a file.
+11 Sep 18:47:27 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json

